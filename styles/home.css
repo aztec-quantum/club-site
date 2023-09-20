@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Titillium Web;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: scroll;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/* Styles for header and Nav Bar */
+.header-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.nav-container-logo {
+    flex: 0.33;
+    text-emphasis: 10px;
+}
+
+.nav-selector-container {
+    flex: 1;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.nav-selector{
+    flex: 1;
+}
+
+.nav-selector > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-selector > a:hover{
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.nav-selector:visited {
+    text-decoration: none;
+}
+
+.contact-selector {
+    flex: 0.7;
+    border: 1px solid white;
+}
+
+.contact-selector > a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+.contact-selector:visited {
+    text-decoration: none;
+}
+
+.contact-selector:hover{
+    background-color:white;
+    color: black;
+    transition: 0.2s;
+}
+
+.contact-selector > a:hover{
+    color: black;
+    transition: 0.2s;
+}
+
+/* Styles for all pages */
+.main-container {
+    height: 100vh;
+}
+.page {
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Styles for home page */
+.home-container {
+    display: none;
+    justify-content: center;
+}
+
+.home-container > h1 {
+    font-size: 70px;
+}
+
+/* Styles for about page */
+.about-container {
+    color: black;
+    display: none;
+    background-color: white;
+}
+
+/* Styles for eboard page */
+.eboard-container {
+    display: none;
+}
+
+/* Styles for event page */
+.events-container {
+    display: none;
+}
+
+/* Styles for join page */
+.join-container {
+    display: none;
+}
+
+/* Styles for footer */
+.footer-container {
+    height: 10vh;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

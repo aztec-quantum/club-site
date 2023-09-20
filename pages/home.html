@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/home.css">
+    <script src="../scripts/index.js"></script>
+
+    <!-- Google Fonts API Injection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <!--  -->
+
+    <title>San Diego State Quantum Computing</title>
+</head>
+<body>
+    <header class="header-container">
+        <!-- Nav Bar -->
+        <div class="nav-container">
+            <div class="nav-container-logo">
+                Aztec <br/>
+                Quantum
+            </div>
+            <nav class="nav-selector-container">
+                <div class="nav-selector">
+                    <a href="#" onclick="switchPage('home')">Home</a>
+                </div>
+                <div class="nav-selector">
+                    <a href="#" onclick="switchPage('about')">About</a>
+                </div>
+                <div class="nav-selector">
+                    <a href="#" onclick="switchPage('eboard')">E-Board</a>
+                </div>
+                <div class="nav-selector">
+                    <a href="#" onclick="switchPage('events')">Events</a>
+                </div>
+                <div class="nav-selector">
+                    <a href="#" onclick="switchPage('join')">Join</a>
+                </div>
+                <div class = "contact-selector">
+                    <a>Contact</a>
+                </div>
+            </nav>
+            <!-- Nav Bar End -->
+        </div>
+    </header>
+
+    <!-- Main Container, where pages are displayed based on nav selection -->
+    <main id="main" class="main-container">
+        <!-- Home Page -->
+        <div id="home" class="page home-container">
+            <h1>Aztec Quantum Computing</h1>
+            <h2>San Diego State University</h2>
+        </div>
+        <!-- About Page -->
+        <div id="about" class="page about-container">
+            <h1>Our Goal: Explore the applications of Quantum Computing</h1>
+        </div>
+        <!-- E-Board Page -->
+        <div id="eboard" class="page eboard-container">
+            <h1>Executive Board Members</h1>
+            <div id="eboard-carousel" class="eboard-carousel">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- Events Page -->
+        <div id="events" class="page events-container">
+            <h1>Upcoming Events</h1>
+            <h1>Past Events</h1>
+        </div>
+        <!-- Join Page -->
+        <div id="join" class="page join-container">
+            <h1>Want to be apart of the club?</h1>
+        </div>
+        <!-- Contact Page -->
+        <div id="contact" class="page contact-container">
+            
+        </div>
+    </main>
+    
+    <!-- Footer container -->
+    <footer class="footer-container">
+        Footer
+    </footer>
+</body>
+</html>
