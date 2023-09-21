@@ -54,38 +54,11 @@ body {
     text-decoration: none;
 }
 
-.contact-selector {
-    flex: 0.7;
-    border: 1px solid white;
-}
-
-.contact-selector > a {
-    text-decoration: none;
-    color: white;
-    width: 100%;
-}
-
-.contact-selector:visited {
-    text-decoration: none;
-}
-
-.contact-selector:hover{
-    background-color:white;
-    color: black;
-    transition: 0.2s;
-}
-
-.contact-selector > a:hover{
-    color: black;
-    transition: 0.2s;
-}
-
 /* Styles for all pages */
 .main-container {
-    height: 100vh;
+    
 }
 .page {
-    height: 100%;
     align-items: center;
     flex-direction: column;
 }
@@ -93,6 +66,7 @@ body {
 /* Styles for home page */
 .home-container {
     display: none;
+    min-height: 80vh;
     justify-content: center;
 }
 
@@ -104,29 +78,51 @@ body {
 .about-container {
     color: black;
     display: none;
+    min-height: 100vh;
     background-color: white;
 }
 
 /* Styles for eboard page */
 .eboard-container {
     display: none;
+    min-height: 100vh;
 }
 
 /* Styles for event page */
 .events-container {
     display: none;
+    min-height: 100vh;
 }
 
 /* Styles for join page */
 .join-container {
     display: none;
+    min-height: 100vh;
 }
 
 /* Styles for footer */
 .footer-container {
-    height: 10vh;
-    background-color: grey;
+    min-height: 20vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-items:center;
+}
+
+.footer-text{
+    flex: 0.5;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.footer-text > h1 {
+    
+}
+
+.footer-links {
+    flex: 0.5;
+}
+
+.footer-links > div{
+    display: inline-block;
+    margin: 20px;
 }
