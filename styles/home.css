@@ -82,10 +82,30 @@ body {
     background-color: white;
 }
 
+.about-content {
+    display: flex;
+    flex-direction: row;
+}
+
 /* Styles for eboard page */
 .eboard-container {
     display: none;
     min-height: 100vh;
+}
+
+.eboard-officer-pic{
+    width: 100%;
+    height: auto;
+}
+
+.eboard-header{
+    padding: 30px;
+    text-align: left;
+}
+
+.eboard-header > h1{
+    text-align: center;
+    font-size: 60px;
 }
 
 /* Styles for event page */
@@ -114,15 +134,23 @@ body {
     margin-left: 100px;
 }
 
-.footer-text > h1 {
-    
-}
-
 .footer-links {
     flex: 0.5;
 }
 
-.footer-links > div{
+.footer-links > div {
     display: inline-block;
     margin: 20px;
 }
+
+/* Footer container styles for smartphones */
+@media (max-width: 768px) {
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .footer-text {
+        margin-left: 0px;
+        text-align: center;
+    }
+  }
