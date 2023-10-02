@@ -76,15 +76,41 @@ body {
 
 /* Styles for about page */
 .about-container {
-    color: black;
     display: none;
-    min-height: 100vh;
-    background-color: white;
 }
 
 .about-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.about-header{
+    padding-bottom: 20px;
+}
+
+.about-carousel-container{
+
+}
+
+.about-carousel{
+    display: flex;
+    overflow: hidden;
+    height: 50vh;
+    width: 50vh;
+}
+
+.about-carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.about-carousel-btn {
+    margin: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
 }
 
 /* Styles for eboard page */
