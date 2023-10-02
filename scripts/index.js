@@ -4,7 +4,6 @@ function switchPage(id){
     for(var i = 0; i < pages.length; i++){
         pages[i].style.display = 'none'
     }
-
     document.getElementById(id).style.display = 'flex';
 }
 

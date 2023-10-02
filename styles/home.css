@@ -13,8 +13,7 @@ body {
 
 /* Styles for header and Nav Bar */
 .header-container {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    
 }
 
 .nav-container {
@@ -22,12 +21,23 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-right: 10px;
 }
 
 .nav-container-logo {
-    flex: 0.33;
-    text-emphasis: 10px;
+    flex: 0.25;
+}
+
+.nav-container-logo > img {
+    height: auto;
+    max-width: 100px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav-container-logo > img{
+        max-width: 50px;
+    }
 }
 
 .nav-selector-container {
@@ -66,7 +76,7 @@ body {
 /* Styles for home page */
 .home-container {
     display: none;
-    min-height: 80vh;
+    min-height: 65vh;
     justify-content: center;
 }
 
@@ -77,6 +87,7 @@ body {
 /* Styles for about page */
 .about-container {
     display: none;
+    min-height: 80vh;
 }
 
 .about-content {
@@ -95,8 +106,6 @@ body {
 .about-carousel{
     display: flex;
     overflow: hidden;
-    height: 50vh;
-    width: 50vh;
 }
 
 .about-carousel-slide {
@@ -110,7 +119,6 @@ body {
     background-color: black;
     color: white;
     cursor: pointer;
-    
 }
 
 /* Styles for eboard page */
@@ -119,12 +127,12 @@ body {
     min-height: 100vh;
 }
 
-.eboard-officer-pic{
+.eboard-officer-pic {
     width: 100%;
     height: auto;
 }
 
-.eboard-header{
+.eboard-header {
     padding: 30px;
     text-align: left;
 }
@@ -157,6 +165,14 @@ body {
     display: none;
     min-height: 100vh;
 }
+.upcoming-events-container {
+    flex: 1;
+}
+
+.past-events-container {
+    flex: 0.5;
+}
+
 
 /* Styles for join page */
 .join-container {
