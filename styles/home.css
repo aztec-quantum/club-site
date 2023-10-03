@@ -13,8 +13,7 @@ body {
 
 /* Styles for header and Nav Bar */
 .header-container {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    
 }
 
 .nav-container {
@@ -22,12 +21,23 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-right: 10px;
 }
 
 .nav-container-logo {
-    flex: 0.33;
-    text-emphasis: 10px;
+    flex: 0.25;
+}
+
+.nav-container-logo > img {
+    height: auto;
+    max-width: 100px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav-container-logo > img{
+        max-width: 50px;
+    }
 }
 
 .nav-selector-container {
@@ -36,7 +46,7 @@ body {
     justify-content: center;
 }
 
-.nav-selector{
+.nav-selector {
     flex: 1;
 }
 
@@ -54,38 +64,11 @@ body {
     text-decoration: none;
 }
 
-.contact-selector {
-    flex: 0.7;
-    border: 1px solid white;
-}
-
-.contact-selector > a {
-    text-decoration: none;
-    color: white;
-    width: 100%;
-}
-
-.contact-selector:visited {
-    text-decoration: none;
-}
-
-.contact-selector:hover{
-    background-color:white;
-    color: black;
-    transition: 0.2s;
-}
-
-.contact-selector > a:hover{
-    color: black;
-    transition: 0.2s;
-}
-
 /* Styles for all pages */
 .main-container {
-    height: 100vh;
+    
 }
 .page {
-    height: 100%;
     align-items: center;
     flex-direction: column;
 }
@@ -93,6 +76,7 @@ body {
 /* Styles for home page */
 .home-container {
     display: none;
+    min-height: 65vh;
     justify-content: center;
 }
 
@@ -102,31 +86,131 @@ body {
 
 /* Styles for about page */
 .about-container {
-    color: black;
     display: none;
-    background-color: white;
+    min-height: 80vh;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-header{
+    padding-bottom: 20px;
+}
+
+.about-carousel-container{
+
+}
+
+.about-carousel{
+    display: flex;
+    overflow: hidden;
+}
+
+.about-carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.about-carousel-btn {
+    margin: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 /* Styles for eboard page */
 .eboard-container {
     display: none;
+    min-height: 100vh;
+}
+
+.eboard-officer-pic {
+    width: 100%;
+    height: auto;
+}
+
+.eboard-header {
+    padding: 30px;
+    text-align: left;
+}
+
+.eboard-header > h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.eboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.eboard-grid-item {
+    padding: 20px;
+}
+
+/* EBoard grid when viewed on smartphone */
+@media (max-width: 768px) {
+    .eboard-grid {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Styles for event page */
 .events-container {
     display: none;
+    min-height: 100vh;
 }
+.upcoming-events-container {
+    flex: 1;
+}
+
+.past-events-container {
+    flex: 0.5;
+}
+
 
 /* Styles for join page */
 .join-container {
     display: none;
+    min-height: 100vh;
 }
 
 /* Styles for footer */
 .footer-container {
-    height: 10vh;
-    background-color: grey;
+    min-height: 20vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-items:center;
+}
+
+.footer-text{
+    flex: 0.5;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.footer-links {
+    flex: 0.5;
+}
+
+.footer-links > div {
+    display: inline-block;
+    margin: 20px;
+}
+
+/* Footer container styles for smartphones */
+@media (max-width: 768px) {
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .footer-text {
+        margin-left: 0px;
+        text-align: center;
+    }
 }
