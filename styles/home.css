@@ -117,11 +117,26 @@ body {
     align-items: center;
 }
 
+.about-carousel-btn-container {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .about-carousel-btn-container {
+        display: flex;
+    }
+}
+
 .about-carousel-btn {
-    margin: 20px;
-    background-color: black;
     color: white;
     cursor: pointer;
+    background-color: transparent;
+    border: 0px;
+}
+
+.about-carousel-btn > img {
+    max-width: 20%;
+    height: auto;
 }
 
 /* Styles for eboard page */
