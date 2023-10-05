@@ -131,12 +131,18 @@ body {
     color: white;
     cursor: pointer;
     background-color: transparent;
+    cursor: default;
     border: 0px;
 }
 
 .about-carousel-btn > img {
     max-width: 20%;
     height: auto;
+}
+
+.about-carousel-btn > img:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 /* Styles for eboard page */
@@ -183,14 +189,19 @@ body {
     display: none;
     min-height: 100vh;
 }
+
 .upcoming-events-container {
     flex: 1;
 }
 
 .past-events-container {
-    flex: 0.5;
+    flex: 1;
 }
 
+.weekly-events-container{
+    flex: 0.5;
+    font-size: 25px;   
+}
 
 /* Styles for join page */
 .join-container {
