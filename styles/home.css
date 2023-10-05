@@ -110,14 +110,38 @@ body {
 
 .about-carousel-slide {
     min-width: 100%;
+    min-height: 40vh;
     box-sizing: border-box;
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.about-carousel-btn-container {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .about-carousel-btn-container {
+        display: flex;
+    }
 }
 
 .about-carousel-btn {
-    margin: 20px;
-    background-color: black;
     color: white;
+    cursor: pointer;
+    background-color: transparent;
+    cursor: default;
+    border: 0px;
+}
+
+.about-carousel-btn > img {
+    max-width: 20%;
+    height: auto;
+}
+
+.about-carousel-btn > img:hover {
+    opacity: 0.5;
     cursor: pointer;
 }
 
@@ -165,19 +189,24 @@ body {
     display: none;
     min-height: 100vh;
 }
+
 .upcoming-events-container {
     flex: 1;
 }
 
 .past-events-container {
-    flex: 0.5;
+    flex: 1;
 }
 
+.weekly-events-container{
+    flex: 0.5;
+    font-size: 25px;   
+}
 
 /* Styles for join page */
 .join-container {
     display: none;
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
 /* Styles for footer */
