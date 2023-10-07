@@ -1,15 +1,21 @@
 // Function that takes div id and shows that page
 function switchPage(id){
     var pages = document.getElementsByClassName("page");
-    for(var i = 0; i < pages.length; i++){
+    for(let i = 0; i < pages.length; i++){
         pages[i].style.display = 'none'
     }
     document.getElementById(id).style.display = 'flex';
+    if(id == 'home'){
+        document.getElementById('main').classList.add('home')
+    }
+    else{
+        document.getElementById('main').classList.remove('home')
+    }
 }
 
 // Change default behavior on anchors
 var anchorLinks = document.getElementsByClassName("nav-selector");
-    for (var i = 0; i < anchorLinks.length; i++) {
+    for (let i = 0; i < anchorLinks.length; i++) {
         anchorLinks[i].addEventListener("click", function (e) {
             e.preventDefault();
         });

@@ -53,6 +53,7 @@ body {
 .nav-selector > a {
     text-decoration: none;
     color: white;
+    font-size: 1.1rem;
 }
 
 .nav-selector > a:hover{
@@ -98,14 +99,17 @@ body {
 .about-header{
     padding-bottom: 20px;
 }
-
+.about-subheader{
+    width: 80%;
+}
 .about-carousel-container{
-
+    border-top: white 1px solid;
 }
 
 .about-carousel{
     display: flex;
     overflow: hidden;
+    
 }
 
 .about-carousel-slide {
@@ -113,8 +117,12 @@ body {
     min-height: 40vh;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.about-carousel-slide > p {
+    width: 50%;
 }
 
 .about-carousel-btn-container {
@@ -164,6 +172,7 @@ body {
 .eboard-header > h1{
     text-align: center;
     font-size: 60px;
+    margin: 2%;
 }
 
 .eboard-grid {
@@ -174,6 +183,16 @@ body {
 
 .eboard-grid-item {
     padding: 20px;
+    background-color: #2b2b2b;
+    margin: 2%;
+}
+.eboard-grid-item:hover {
+    background-color: #3f3f3f;
+}
+.eboard-grid-item > img {
+    width: 85%;
+    height: auto;
+    border: white 1px solid;
 }
 
 /* EBoard grid when viewed on smartphone */
@@ -222,7 +241,13 @@ body {
     text-align: left;
     margin-left: 100px;
 }
-
+.footer-text > p > a{
+    color: white;
+}
+.footer-text > p > a:hover{
+    opacity: 0.5;
+    transition: 0.2s;
+}
 .footer-links {
     flex: 0.5;
 }
@@ -242,4 +267,68 @@ body {
         margin-left: 0px;
         text-align: center;
     }
+}
+
+
+span{
+    position: absolute;
+    left: 80%;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
+    animation:  shooting-star 3s linear infinite;
+}
+span::before{
+    content: '';
+    position: absolute;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, #fa9999, transparent);
+}
+@keyframes shooting-star {
+    0%
+    {
+        transform: rotate(0deg) translateX(0);
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+
+    }
+    100%
+    {
+        transform: rotate(0deg) translateX(-150rem);
+        opacity: 0;
+
+    }
+    
+}
+
+span:nth-child(1){
+    right: 0;
+    left:initial;
+    animation-delay:0 ;
+    animation-duration: 1.5s;
+}
+span:nth-child(2){
+    right:0;
+    left:initial;
+    animation-delay:0 ;
+    animation-duration: 2s;
+}
+span:nth-child(3){
+    right:0;
+    left:initial;
+    animation-delay:0 ;
+    animation-duration: 1.75s;
+}
+span:nth-child(4){
+    right:0;
+    left:initial;
+    animation-delay:0 ;
+    animation-duration: 2.5s;
 }
