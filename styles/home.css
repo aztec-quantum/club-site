@@ -64,6 +64,10 @@ body {
 
 .sidenav-open-btn {
     display: none;
+    border: 2px solid white;
+    border-radius: 2px;
+    font-family: Titillium Web;
+    color: black;
 }
 
 .sidenav-close-btn {
