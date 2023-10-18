@@ -55,11 +55,11 @@ body {
 .sidenav-selector {
     text-decoration: none;
     padding-right: 20%;
+    font-size: 20px;
 }
 
 .sidenav-selector:hover{
     opacity: 50%;
-    transition: 0.3s;
 }
 
 .sidenav-open-btn {
@@ -71,7 +71,8 @@ body {
 }
 
 .sidenav-close-btn {
-    
+    color: black;
+    margin-bottom: 30px;
 }
 
 .nav-selector-container {
