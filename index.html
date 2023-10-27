@@ -39,10 +39,34 @@
                     <a href="#" onclick="switchPage('join')">Join</a>
                 </div>
             </nav>
-            
+            <button id="sidenav-open-btn" class="sidenav-open-btn" onclick="openSideNav()">
+                <strong>Menu</strong>
+            </button>
         </div>
         <!-- Nav Bar End -->
     </header>
+
+    <!-- Sidenav Bar for Mobile -->
+    <nav id="sidenav" class="sidenav">
+        <button id="sidenav-close-btn" class="sidenav-close-btn" onclick="closeSideNav()"> 
+            <strong>&times</strong> 
+        </button>
+        <div>
+            <a class="sidenav-selector" href="#" onclick="switchPage('home')">Home</a>
+        </div>
+        <div>
+            <a class="sidenav-selector" href="#" onclick="switchPage('about')">About</a>
+        </div>
+        <div>
+            <a class="sidenav-selector" href="#" onclick="switchPage('eboard')">E-Board</a>
+        </div>
+        <div>
+            <a class="sidenav-selector" href="#" onclick="switchPage('events')">Events</a>
+        </div>
+        <div>
+            <a class="sidenav-selector" href="#" onclick="switchPage('join')">Join</a>
+        </div>
+    </nav>
 
     <!-- Main Container, where pages are displayed based on nav selection -->
     <main id="main" class="main-container">

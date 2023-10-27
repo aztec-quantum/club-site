@@ -5,6 +5,7 @@ function switchPage(id){
         pages[i].style.display = 'none'
     }
     document.getElementById(id).style.display = 'flex';
+    closeSideNav();
     if(id == 'home'){
         document.getElementById('main').classList.add('home')
     }
@@ -57,3 +58,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // setInterval(nextSlide, 3000); // Change slide every 3 seconds
 });
 
+//Show sidenav menu onClick
+
+function openSideNav(){
+    document.getElementById("sidenav").style.display = "block";
+    document.getElementById("sidenav").style.width = "50%";
+}
+
+function closeSideNav(){
+    document.getElementById("sidenav").style.display = "none";
+}
