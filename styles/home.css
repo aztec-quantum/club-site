@@ -207,6 +207,28 @@ body {
     cursor: pointer;
 }
 
+
+
+
+/* Styles for Member Roadmap (roadmap) page */
+.roadmap-container {
+    display: none;
+    min-height: 80vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Styles for eboard page */
 .eboard-container {
     display: none;
