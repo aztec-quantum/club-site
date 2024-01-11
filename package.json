@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/aztec-quantum/club-site/issues"
   },
-  "homepage": "https://github.com/aztec-quantum/club-site#readme"
+  "homepage": "https://github.com/aztec-quantum/club-site#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.3"
+  }
 }
