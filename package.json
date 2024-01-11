@@ -1,0 +1,20 @@
+{
+  "name": "club-site",
+  "version": "1.0.0",
+  "description": "Server for Club Site",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aztec-quantum/club-site.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/aztec-quantum/club-site/issues"
+  },
+  "homepage": "https://github.com/aztec-quantum/club-site#readme"
+}
