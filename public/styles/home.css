@@ -216,10 +216,37 @@ body {
     min-height: 80vh;
 }
 
+.roadmap-subheader {
+    width: 60%;
+}
 
+.roadmap-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+}
 
+.roadmap-grid-item {
+    padding: 20px;
+    background-color: #2b2b2b;
+    margin: 2%;
+}
 
+.roadmap-grid-item:hover {
+    background-color: #3f3f3f;
+}
 
+.roadmap-grid-item>img {
+    width: 85%;
+    height: auto;
+    border: white 1px solid;
+}
+
+.roadmap-description-subheader{
+    text-align: left;
+}
 
 
 

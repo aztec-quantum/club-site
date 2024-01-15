@@ -68,3 +68,12 @@ function openSideNav(){
 function closeSideNav(){
     document.getElementById("sidenav").style.display = "none";
 }
+
+
+
+// Member roadmap
+
+function displayText() {
+  var text = document.getElementById("textField");
+  text.style.display = "block";
+}
