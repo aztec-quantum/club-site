@@ -307,11 +307,15 @@ body {
 
 .tag:hover {
     background-color: crimson;
-    color: rgb(9, 0, 0);
+    color: rgb(137, 41, 41);
 }
 
 .tag:hover::after {
     border-left-color: crimson;
+}
+
+.roadmap-node:hover {
+    background-color: #3f3f3f;
 }
 /*.roadmap-grid-item:hover {
     background-color: #3f3f3f;
