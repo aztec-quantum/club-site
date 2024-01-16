@@ -9,6 +9,9 @@ function switchPage(id){
     if(id == 'home'){
         document.getElementById('main').classList.add('home')
     }
+    if(id == 'roadmap'){
+        if(document.getElementById('roadmap').children.length == 0)fetchRoadmapJSON();
+    }
     else{
         document.getElementById('main').classList.remove('home')
     }
@@ -68,3 +71,97 @@ function openSideNav(){
 function closeSideNav(){
     document.getElementById("sidenav").style.display = "none";
 }
+
+// Handle roadmap
+function fetchRoadmapJSON() {
+    fetch('../assets/json/roadmap.json')
+        .then(response => response.json())
+        .then(data => {
+            renderRoadmap(data);
+        })
+        .catch(error => console.error('Error fetching roadmap JSON:', error));
+}
+function renderRoadmap(roadmapData) {
+    const roadmap = document.createElement('ul');
+    roadmap.classList.add('roadmap');
+    for (const node of roadmapData.roadmap['roadmap-nodes']) {
+        roadmap.appendChild(createRoadmapItem(node.date, node.title, node.description));
+    }
+    
+    const roadmapContainer = document.getElementById('roadmap');
+    roadmapContainer.appendChild(roadmap);
+}
+
+function createRoadmapItem(date, title, desc){
+    item = document.createElement('li');
+    item.classList.add('roadmap-node');
+    item.appendChild(createRoadmapTitle(title));
+    item.appendChild(createRoadmapDate(date));
+    item.appendChild(createRoadmapDesc(desc));
+    return item;
+}
+
+function createRoadmapDate(date){
+    dateElem = document.createElement('h3');
+    dateElem.classList.add('node-date');
+    dateElem.innerText = date;
+    return dateElem;
+}
+
+function createRoadmapTitle(title){
+    titleElem = document.createElement('h3');
+    titleElem.classList.add('node-text');
+    titleElem.innerText = title;
+    return titleElem;
+}
+
+function createRoadmapDesc(desc){
+    descElem = document.createElement('p');
+    descElem.classList.add('node-desc');
+    descElem.innerText = desc;
+    return descElem;
+}
+
+function createRoadmapPurpose(purpose){
+    purposeElem = document.createElement('p');
+    purposeElem.classList.add('node-purp');
+    purposeElem.innerText = purpose;
+    return purposeElem;
+}
+
+function createTagContainer(){
+    tagsContainer = document.createElement('ul');
+    tagsContainer.classList.add('tags-container');
+    tagsContainer.appendChild(createTags());
+    return tagsContainer;
+}
+function createTags(){
+    tags = document.createElement('li');
+    tags.classList.add('node-tag');
+    tags.innerText = "test";
+    return tags;
+}
+function createResourcesContainer(){
+    resourcesContainer = document.createElement('ul');
+    resourcesContainer.classList.add('resources-container');
+    resourcesContainer.appendChild(createResources());
+    return resourcesContainer;
+}
+function createResources(){
+
+}
+/**<ul class="roadmap">
+                <li class="roadmap-node">
+                    <h3>Hello Quantum</h3>
+                    <h4> Lab 1 - 1/31</h4>
+                    <p class="node-desc"></p>
+                    <p class="node-purp"></p>
+                    <p class="node-purp"></p>
+                    <ul class="tags-container">
+                        <li class="node-tag"></li>
+                    </ul>
+                    <ul class="resources-container">
+                        <li class="node-resource"></li>
+                    </ul>
+                </li>
+            </ul> */

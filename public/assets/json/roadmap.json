@@ -1,0 +1,198 @@
+{
+    "roadmap": {
+        "roadmap-nodes": [
+            {
+                "title": "Hello Quantum",
+                "description": "This lab will lay the foundation for using Qiskit and learning about the Gate Model in quantum computing. Participants will start with basic concepts in Quantum Information and Python programming.",
+                "date": "1/31",
+                "purpose": "Lay a foundation for using Qiskit and learning Gate Model of Quantum Computation",
+                "tagscontainer": {
+                    "tags": ["Quantum Information","Python"]
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Intro to Circuits",
+                "description": "This lab will lay the foundation for using Qiskit and learning about the Gate Model in quantum computing. Participants will start with basic concepts in Quantum Information and Python programming.",
+                "date": "2/7",
+                "purpose": "Understand the basics of quantum information theory",
+                "tagscontainer": {
+                    "tags": []
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "A Deeper Look at Circuits",
+                "description": "The lab will delve deeper into Quantum Circuits and the Gate Model. It aims to build a solid foundation in Quantum Gate Model and the practical use of Quantum Circuits.",
+                "date": "2/14",
+                "purpose": "Build a foundation in Quantum Gate Model and Using Quantum Circuits",
+                "tagscontainer": {
+                    "tags": []
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Intro to Gate Model",
+                "description": "This lab is about building Quantum Circuits using the Quantum Gate Model. It will cover the Gate Model, Logic Gates, and Quantum Information.",
+                "date": "2/21",
+                "purpose": "Building Quantum Circuits using the Quantum Gate Model",
+                "tagscontainer": {
+                    "tags": []
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "A Deeper Look at the Gate Model",
+                "description": "The focus here is to understand the gate model and its applications, including Logic Gates, Boolean Expressions, Quantum Information, and Dynamic Circuits.",
+                "date": "2/28",
+                "purpose": "Understand the gate model and it’s applications ",
+                "tagscontainer": {
+                    "tags": []
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Beginning Quantum Algorithms",
+                "description": "This lab introduces entangled qubit pairs and lays a foundation for understanding quantum algorithms. It will cover the Gate Model, Quantum Algorithms, and Bell’s States.",
+                "date": "3/6",
+                "purpose": "Introduce entangled qubit pairs and how entanglement is used in quantum algorithms",
+                "tagscontainer": {
+                    "tags": []
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Quantum Algorithms and Use Cases",
+                "description": "This lab focuses on understanding how quantum teleportation is implemented and the algorithms it leverages.",
+                "date": "3/13",
+                "purpose": "Understand how quantum teleportation is implemented and the broader implications of the algorithm",
+                "tagscontainer": {
+                    "tags": []
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Implementing Quantum Algorithms",
+                "description": "Introduces Dynamic Circuits and famous quantum algorithms like Shor’s and Grover’s Algorithms, along with their applications.",
+                "date": "3/20",
+                "purpose": "Introduce Dynamic Circuits, Introduce a Famous quantum algorithm and understand it’s applications",
+                "tagscontainer": {
+                    "tags": []
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Intro to Error Correction",
+                "description": "The lab introduces quantum errors and explores how they can be corrected in hardware and software.",
+                "date": "3/27",
+                "purpose": "Introduce Quantum Errors and explore ways to properly handle errors",
+                "tagscontainer": {
+                    "tags": []
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Mitigation, Correction, and Suppression",
+                "description": "A deeper look into Quantum Errors, understanding the difference between error mitigation, error correction, and error suppression.",
+                "date": "4/3",
+                "purpose": "A deeper look into Quantum Errors. Understand the difference between error mitigation, error correction, and error suppression",
+                "tagscontainer": {
+                    "tags": []
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Designing Quantum Circuits",
+                "description": "Focuses on learning how to design and develop a quantum circuit.",
+                "date": "4/10",
+                "purpose": "Learn how to design and develop a quantum circuit",
+                "tagscontainer": {
+                    "tags": []
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Algorithm Creation I",
+                "description": "Covers the basics of Quantum Algorithm Creation.",
+                "date": "4/17",
+                "purpose": "Learn the basics of Quantum Algorithm Creation",
+                "tagscontainer": {
+                    "tags": []
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Algorithm Creation II",
+                "description": "Continues with Quantum Algorithm Design and Development.",
+                "date": "4/24",
+                "purpose": "Look into Quantum Algorithm Design and Development",
+                "tagscontainer": {
+                    "tags": []
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Quantum Application Design",
+                "description": "Design an Open Source Quantum Algorithm - Development Summary I.",
+                "date": "5/1",
+                "purpose": "Develop an Open Source Quantum Algorithm",
+                "tagscontainer": {
+                    "tags": []
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Quantum Application Development I",
+                "description": "Continues the development of an Open Source Quantum Algorithm - Development Summary II.",
+                "date": "5/8",
+                "purpose": "Develop an Open Source Quantum Algorithm",
+                "tagscontainer": {
+                    "tags": []
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Quantum Application Development II",
+                "description": "Finalizes the development of an Open Source Quantum Algorithm - Development Summary III.",
+                "date": "5/15",
+                "purpose": "Develop an Open Source Quantum Algorithm",
+                "tagscontainer": {
+                    "tags": []
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            }
+        ]
+    }
+}
