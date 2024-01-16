@@ -212,8 +212,22 @@ body {
 
 /* Styles for Member Roadmap (roadmap) page */
 .roadmap-container {
-    display: none;
-    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    min-height: 70vh;
+}
+.roadmap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2b2b2b;
+    margin: 1vh;
+    padding: 2vh;
+}
+.roadmap:hover {
+    background-color: #3f3f3f;
 }
 
 
