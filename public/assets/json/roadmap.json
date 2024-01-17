@@ -19,7 +19,7 @@
                 "date": "2/7",
                 "purpose": "Understand the basics of quantum information theory",
                 "tagscontainer": {
-                    "tags": []
+                    "tags": ["Python", "Quantum Information", "Quantum Circuits"]
                 },
                 "resourcescontainer": {
                     "resources": []
@@ -31,7 +31,7 @@
                 "date": "2/14",
                 "purpose": "Build a foundation in Quantum Gate Model and Using Quantum Circuits",
                 "tagscontainer": {
-                    "tags": []
+                    "tags": ["Quantum Information", "Quantum Circuits", "Gate Model"]
                 },
                 "resourcescontainer": {
                     "resources": []
@@ -43,7 +43,7 @@
                 "date": "2/21",
                 "purpose": "Building Quantum Circuits using the Quantum Gate Model",
                 "tagscontainer": {
-                    "tags": []
+                    "tags": ["Gate Model", "Logic Gates", "Quantum Information"]
                 },
                 "resourcescontainer": {
                     "resources": []
@@ -55,7 +55,7 @@
                 "date": "2/28",
                 "purpose": "Understand the gate model and it’s applications ",
                 "tagscontainer": {
-                    "tags": []
+                    "tags": ["Gate Model", "Logic Gates", "Boolean Expressions", "Quantum Information", "Dynamic Circuits"]
                 },
                 "resourcescontainer": {
                     "resources": []
@@ -67,7 +67,7 @@
                 "date": "3/6",
                 "purpose": "Introduce entangled qubit pairs and how entanglement is used in quantum algorithms",
                 "tagscontainer": {
-                    "tags": []
+                    "tags": ["Gate Model", "Quantum Algorithms", "Bell’s States"]
                 },
                 "resourcescontainer": {
                     "resources": []
@@ -79,7 +79,7 @@
                 "date": "3/13",
                 "purpose": "Understand how quantum teleportation is implemented and the broader implications of the algorithm",
                 "tagscontainer": {
-                    "tags": []
+                    "tags": ["Quantum Teleportation", "Quantum Algorithms"]
                 },
                 "resourcescontainer": {
                     "resources": []
@@ -91,7 +91,8 @@
                 "date": "3/20",
                 "purpose": "Introduce Dynamic Circuits, Introduce a Famous quantum algorithm and understand it’s applications",
                 "tagscontainer": {
-                    "tags": []
+                    "tags": ["Dynamic Circuits", "Quantum Circuits", "Python",
+                    "Shor’s Algorithm", "Grover’s Algorithm", "Quantum Algorithms"]
                 },
                 "resourcescontainer": {
                     "resources": []
@@ -103,7 +104,7 @@
                 "date": "3/27",
                 "purpose": "Introduce Quantum Errors and explore ways to properly handle errors",
                 "tagscontainer": {
-                    "tags": []
+                    "tags": ["Quantum Errors", "Error Correction Techniques", "Quantum Hardware"]
                 },
                 "resourcescontainer": {
                     "resources": []
@@ -115,7 +116,7 @@
                 "date": "4/3",
                 "purpose": "A deeper look into Quantum Errors. Understand the difference between error mitigation, error correction, and error suppression",
                 "tagscontainer": {
-                    "tags": []
+                    "tags": ["Quantum Errors", "Error Mitigation", "Error Correction", "Error Suppression", "Quantum Algorithms", "Quantum Hardware"]
                 },
                 "resourcescontainer": {
                     "resources": []
@@ -127,7 +128,7 @@
                 "date": "4/10",
                 "purpose": "Learn how to design and develop a quantum circuit",
                 "tagscontainer": {
-                    "tags": []
+                    "tags": ["Quantum Circuits", "Quantum Information", "Python", "Quantum Utility", "Quantum Applications"]
                 },
                 "resourcescontainer": {
                     "resources": []
@@ -139,7 +140,7 @@
                 "date": "4/17",
                 "purpose": "Learn the basics of Quantum Algorithm Creation",
                 "tagscontainer": {
-                    "tags": []
+                    "tags": ["Quantum Algorithms", "Python", "Dynamic Circuits"]
                 },
                 "resourcescontainer": {
                     "resources": []
@@ -151,7 +152,7 @@
                 "date": "4/24",
                 "purpose": "Look into Quantum Algorithm Design and Development",
                 "tagscontainer": {
-                    "tags": []
+                    "tags": ["Quantum Algorithms", "Python", "Dynamic Circuits"]
                 },
                 "resourcescontainer": {
                     "resources": []
@@ -163,7 +164,7 @@
                 "date": "5/1",
                 "purpose": "Develop an Open Source Quantum Algorithm",
                 "tagscontainer": {
-                    "tags": []
+                    "tags": ["Quantum Software Engineering", "Software Engineering"]
                 },
                 "resourcescontainer": {
                     "resources": []
@@ -175,7 +176,7 @@
                 "date": "5/8",
                 "purpose": "Develop an Open Source Quantum Algorithm",
                 "tagscontainer": {
-                    "tags": []
+                    "tags": ["Quantum Software Engineering", "Software Engineering"]
                 },
                 "resourcescontainer": {
                     "resources": []
@@ -187,7 +188,7 @@
                 "date": "5/15",
                 "purpose": "Develop an Open Source Quantum Algorithm",
                 "tagscontainer": {
-                    "tags": []
+                    "tags": ["Quantum Software Engineering", "Software Engineering"]
                 },
                 "resourcescontainer": {
                     "resources": []

@@ -85,62 +85,72 @@ function renderRoadmap(roadmapData) {
     const roadmap = document.createElement('ul');
     roadmap.classList.add('roadmap');
     for (const node of roadmapData.roadmap['roadmap-nodes']) {
-        roadmap.appendChild(createRoadmapItem(node.date, node.title, node.description));
+        roadmap.appendChild(createRoadmapItem(node));
     }
     
     const roadmapContainer = document.getElementById('roadmap');
     roadmapContainer.appendChild(roadmap);
 }
 
-function createRoadmapItem(date, title, desc){
-    item = document.createElement('li');
+function createRoadmapItem(node){
+    let item = document.createElement('li');
     item.classList.add('roadmap-node');
-    item.appendChild(createRoadmapTitle(title));
-    item.appendChild(createRoadmapDate(date));
-    item.appendChild(createRoadmapDesc(desc));
+    item.onclick = function(){
+        if(item.children.length == 3){
+            let tags = createTagContainer(node.tagscontainer['tags'])
+            item.appendChild(tags)
+            let purp = createRoadmapPurpose(node.purpose);
+            item.appendChild(purp);
+        }
+        else{
+            while(item.children.length > 3){item.removeChild(item.lastChild);}
+        }
+    }
+    item.appendChild(createRoadmapTitle(node.title));
+    item.appendChild(createRoadmapDate(node.date));
+    item.appendChild(createRoadmapDesc(node.description));
     return item;
 }
-
 function createRoadmapDate(date){
-    dateElem = document.createElement('h3');
+    let dateElem = document.createElement('h3');
     dateElem.classList.add('node-date');
     dateElem.innerText = date;
     return dateElem;
 }
 
 function createRoadmapTitle(title){
-    titleElem = document.createElement('h3');
+    let titleElem = document.createElement('h3');
     titleElem.classList.add('node-text');
     titleElem.innerText = title;
     return titleElem;
 }
 
 function createRoadmapDesc(desc){
-    descElem = document.createElement('p');
+    let descElem = document.createElement('p');
     descElem.classList.add('node-desc');
     descElem.innerText = desc;
     return descElem;
 }
 
 function createRoadmapPurpose(purpose){
-    purposeElem = document.createElement('p');
+    let purposeElem = document.createElement('p');
     purposeElem.classList.add('node-purp');
     purposeElem.innerText = purpose;
     return purposeElem;
 }
 
-function createTagContainer(){
-    tagsContainer = document.createElement('ul');
+function createTagContainer(tags){
+    let tagsContainer = document.createElement('ul');
     tagsContainer.classList.add('tags-container');
-    tagsContainer.appendChild(createTags());
+    for(const tag in tags){
+        let tagElem = document.createElement('li');
+        tagElem.innerText = tags[tag];
+        tagElem.classList.add('tag')
+        tagsContainer.appendChild(tagElem)
+    }
     return tagsContainer;
 }
-function createTags(){
-    tags = document.createElement('li');
-    tags.classList.add('node-tag');
-    tags.innerText = "test";
-    return tags;
-}
+
 function createResourcesContainer(){
     resourcesContainer = document.createElement('ul');
     resourcesContainer.classList.add('resources-container');
