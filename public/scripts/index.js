@@ -12,6 +12,9 @@ function switchPage(id){
     if(id == 'roadmap'){
         if(document.getElementById('roadmap').children.length == 0)fetchRoadmapJSON();
     }
+    if(id == 'research'){
+        if(document.getElementById('research').children.length == 0)fetchResearchJSON();
+    }
     else{
         document.getElementById('main').classList.remove('home')
     }
@@ -71,6 +74,87 @@ function openSideNav(){
 function closeSideNav(){
     document.getElementById("sidenav").style.display = "none";
 }
+
+
+
+
+// Handle research
+function fetchResearchJSON() {
+    fetch('../assets/json/research.json')
+        .then(response => response.json())
+        .then(data => {
+            renderResearch(data);
+        })
+        .catch(error => console.error('Error fetching research JSON:', error));
+}
+function renderResearch(researchData) {
+    const research = document.createElement('ul');
+    research.classList.add('research');
+    for (const node of researchData.research['research-nodes']) {
+        research.appendChild(createResearchItem(node));
+    }
+    
+    const researchContainer = document.getElementById('research');
+    researchContainer.appendChild(research);
+}
+
+function createResearchItem(node){
+    let item = document.createElement('li');
+    item.classList.add('research-node');
+    item.onclick = function(){
+        if(item.children.length == 3){
+            let tags = createTagContainer(node.tagscontainer['tags'])
+            item.appendChild(tags)
+            let purp = createResearchPurpose(node.purpose);
+            item.appendChild(purp);
+        }
+        else{
+            while(item.children.length > 3){item.removeChild(item.lastChild);}
+        }
+    }
+    item.appendChild(createResearchTitle(node.title));
+    item.appendChild(createResearchDate(node.date));
+    item.appendChild(createResearchDesc(node.description));
+    return item;
+}
+function createResearchDate(date){
+    let dateElem = document.createElement('h3');
+    dateElem.classList.add('node-date');
+    dateElem.innerText = date;
+    return dateElem;
+}
+
+function createResearchTitle(title){
+    let titleElem = document.createElement('h3');
+    titleElem.classList.add('node-text');
+    titleElem.innerText = title;
+    return titleElem;
+}
+
+function createResearchDesc(desc){
+    let descElem = document.createElement('p');
+    descElem.classList.add('node-desc');
+    descElem.innerText = desc;
+    return descElem;
+}
+
+function createResearchPurpose(purpose){
+    let purposeElem = document.createElement('p');
+    purposeElem.classList.add('node-purp');
+    purposeElem.innerText = purpose;
+    return purposeElem;
+}
+// TODO: there should be a way to reuse the same functions for roadmap and research, and other pages. To promote portability, rename them renderNodes instead of roadmap and research.....
+
+
+
+
+
+
+
+
+
+
 
 // Handle roadmap
 function fetchRoadmapJSON() {
