@@ -10,7 +10,7 @@
                     "tags": ["Quantum Information","Python"]
                 },
                 "resourcescontainer": {
-                    "resources": []
+                    "resources": ["https://qiskit.org/textbook/preface.html","https://www.youtube.com/embed/pQsdygaYcE4?si=JMQGiqlvfiCAjueg"]
                 }
             },
             {

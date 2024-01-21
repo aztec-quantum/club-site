@@ -96,18 +96,19 @@ function createRoadmapItem(node){
     let item = document.createElement('li');
     item.classList.add('roadmap-node');
     item.onclick = function(){
-        if(item.children.length == 3){
+        if(item.children.length == 2){
             let tags = createTagContainer(node.tagscontainer['tags'])
             item.appendChild(tags)
             let purp = createRoadmapPurpose(node.purpose);
             item.appendChild(purp);
+            let resources = createResourcesContainer(node.resourcescontainer['resources']);
+            item.appendChild(resources);
         }
         else{
-            while(item.children.length > 3){item.removeChild(item.lastChild);}
+            while(item.children.length > 2){item.removeChild(item.lastChild);}
         }
     }
-    item.appendChild(createRoadmapTitle(node.title));
-    item.appendChild(createRoadmapDate(node.date));
+    item.appendChild(createRoadmapTitle(node.title, node.date));
     item.appendChild(createRoadmapDesc(node.description));
     return item;
 }
@@ -118,10 +119,10 @@ function createRoadmapDate(date){
     return dateElem;
 }
 
-function createRoadmapTitle(title){
+function createRoadmapTitle(title, date){
     let titleElem = document.createElement('h3');
     titleElem.classList.add('node-text');
-    titleElem.innerText = title;
+    titleElem.innerText = title + " - " + date;
     return titleElem;
 }
 
@@ -151,14 +152,34 @@ function createTagContainer(tags){
     return tagsContainer;
 }
 
-function createResourcesContainer(){
-    resourcesContainer = document.createElement('ul');
+function createResourcesContainer(resources){
+    let resourcesContainer = document.createElement('ul');
     resourcesContainer.classList.add('resources-container');
-    resourcesContainer.appendChild(createResources());
+    resourcesContainer.innerText = 'Resources';
+    for(const resource in resources){
+        let resourceElem = document.createElement('li');
+        resourceElem.classList.add('resource-node')
+        if(resources[resource].includes("https://www.youtube.com")){
+            let resourceNode = document.createElement('iframe');
+            resourceNode.src = resources[resource];
+            resourceNode.allow = "fullscreen"
+            resourceNode.classList.add('resource-node')
+            resourceElem.appendChild(resourceNode)
+        }
+        else{
+            let resourceNode = document.createElement('a');
+            resourceNode.href = resources[resource];
+            resourceNode.target = "_blank"
+            resourceNode.rel = "noopener noreferrer"
+            resourceNode.innerText = resources[resource];
+            resourceElem.appendChild(resourceNode)
+        }
+        
+        
+        
+        resourcesContainer.appendChild(resourceElem)
+    }
     return resourcesContainer;
-}
-function createResources(){
-
 }
 /**<ul class="roadmap">
                 <li class="roadmap-node">

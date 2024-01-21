@@ -263,8 +263,8 @@ body {
 }
 
 .eboard-header {
-    padding: 30px;
-    text-align: left;
+    padding: 5%;
+    text-align: center;
 }
 
 .eboard-header > h1{
@@ -513,3 +513,25 @@ span:nth-child(4){
 .tag:hover::after {
     border-left-color: rgb(6, 6, 6);
 }
+.resources-container {
+    list-style-type: none;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+}
+.resource-node {
+    text-decoration: none;
+    margin: 4%;
+}
+.resource-node > a{
+    color:#ffffff
+}
+.resource-node > a:hover{
+    color: #5a99ff;
+}
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
