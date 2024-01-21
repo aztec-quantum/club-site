@@ -13,7 +13,7 @@ function switchPage(id){
         if(document.getElementById('roadmap').children.length == 0)fetchRoadmapJSON();
     }
     if(id == 'research'){
-        if(document.getElementById('research').children.length == 0)fetchResearchJSON();
+        if(document.getElementById('research').children.length == 2)fetchResearchJSON();
     }
     else{
         document.getElementById('main').classList.remove('home')
