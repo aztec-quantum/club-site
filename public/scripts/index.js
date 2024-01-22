@@ -35,14 +35,15 @@ window.onload = function(){
 
 // Handle about change slide carousel
 document.addEventListener("DOMContentLoaded", function () {
-    const carouselContainer = document.querySelector(".about-carousel");
     const slides = document.querySelectorAll(".about-carousel-slide");
-
+    
     let currentIndex = 0;
 
     function showSlide(index) {
         slides.forEach((slide, i) => {
+
             slide.style.transform = `translateX(-${index * 100}%)`;
+            slide.style.transitionDuration = "0.5s";
         });
     }
 
@@ -144,7 +145,7 @@ function createResearchPurpose(purpose){
     purposeElem.innerText = purpose;
     return purposeElem;
 }
-// TODO: there should be a way to reuse the same functions for roadmap and research, and other pages. To promote portability, rename them renderNodes instead of roadmap and research.....
+
 
 
 

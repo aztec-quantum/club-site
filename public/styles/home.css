@@ -117,9 +117,7 @@ body {
 }
 
 /* Styles for all pages */
-.main-container {
-    
-}
+
 .page {
     align-items: center;
     flex-direction: column;
@@ -141,7 +139,27 @@ body {
     display: none;
     min-height: 80vh;
 }
+.image-slide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none !important;
+}
+.image-node{
+    max-width: 45vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1%;
 
+}
+.image-node > img {
+    width: 100% !important;
+    height: auto;
+}
 .about-content {
     display: flex;
     flex-direction: column;
@@ -168,7 +186,7 @@ body {
 
 .about-carousel-slide {
     min-width: 100%;
-    min-height: 40vh;
+    min-height: 20vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -255,19 +273,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1vh;
+    margin: 2%;
     padding: 2vh;
+    list-style-type: none;
 }
 .roadmap-node:hover {
     background-color: #3f3f3f;
 }
 .roadmap-node {
     padding: 2%;
+    list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: top;
     align-items: center;
-    margin: 1vh;
+    margin: 2%;
     background-color: #2b2b2b;
     max-width: 50vw;
 }
@@ -500,6 +520,15 @@ span:nth-child(4){
     animation-duration: 3.5s;
 }
 
+.tags-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0%;
+}
 .tag {
     background: #000000;
     border-radius: 3px 0 0 3px;
@@ -548,14 +577,17 @@ span:nth-child(4){
 }
 .resources-container {
     list-style-type: none;
+    padding-inline-start: 0px !important;
     display: flex;
     justify-content: top;
     align-items: center;
     flex-direction: column;
+    margin: none;
+    padding: none !important;
 }
 .resource-node {
     text-decoration: none;
-    margin: 4%;
+    margin: 2%;
 }
 .resource-node > a{
     color:#ffffff
