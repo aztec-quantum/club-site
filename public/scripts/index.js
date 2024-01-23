@@ -287,18 +287,3 @@ function createResourcesContainer(resources){
     }
     return resourcesContainer;
 }
-/**<ul class="roadmap">
-                <li class="roadmap-node">
-                    <h3>Hello Quantum</h3>
-                    <h4> Lab 1 - 1/31</h4>
-                    <p class="node-desc"></p>
-                    <p class="node-purp"></p>
-                    <p class="node-purp"></p>
-                    <ul class="tags-container">
-                        <li class="node-tag"></li>
-                    </ul>
-                    <ul class="resources-container">
-                        <li class="node-resource"></li>
-                    </ul>
-                </li>
-            </ul> */
