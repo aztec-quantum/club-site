@@ -10,14 +10,11 @@ function switchPage(id){
         document.getElementById('main').classList.add('home')
     }
     if(id == 'roadmap'){
-        if(document.getElementById('roadmap').children.length == 0)fetchRoadmapJSON();
+        if(document.getElementById('roadmap').children.length == 3)fetchRoadmapJSON();
     }
     if(id == 'research'){
         if(document.getElementById('research').children.length == 2)fetchResearchJSON();
 
-        if(document.getElementById('research').children.length == 0)fetchResearchJSON();
-
-        if(document.getElementById('research').children.length == 2)fetchResearchJSON();
 
     }
     else{
@@ -86,18 +83,20 @@ function closeSideNav(){
 
 // Handle research
 function fetchResearchJSON() {
-    fetch('../assets/json/research.json')
+    fetch('../assets/json/roadmap.json')
         .then(response => response.json())
         .then(data => {
             renderResearch(data);
         })
         .catch(error => console.error('Error fetching research JSON:', error));
 }
+
 function renderResearch(researchData) {
     const research = document.createElement('ul');
-    research.classList.add('research');
-    for (const node of researchData.research['research-nodes']) {
-        research.appendChild(createResearchItem(node));
+    for (const node of researchData.roadmap['research-nodes']) {
+        const resElem = createResearchItem(node)
+        research.appendChild(resElem);
+        
     }
     
     const researchContainer = document.getElementById('research');
@@ -107,36 +106,15 @@ function renderResearch(researchData) {
 function createResearchItem(node){
     let item = document.createElement('li');
     item.classList.add('research-node');
-    item.onclick = function(){
-        if(item.children.length == 3){
-
-            //let desc = createResearchPurpose(node.description);
-            //item.appendChild(desc);
-            //let links = createLinksContainer(node.linkscontainer['links'])
-            //if(links.children.length > 0)item.appendChild(links); 
-            //Uncomment when research data is ready
-
-            let tags = createTagContainer(node.tagscontainer['tags'])
-            item.appendChild(tags)
-            let purp = createResearchPurpose(node.purpose);
-            item.appendChild(purp);
-
-        }
-        else{
-            while(item.children.length > 3){item.removeChild(item.lastChild);}
-        }
-    }
     item.appendChild(createResearchTitle(node.title));
-
     item.appendChild(createResearchAuthors(node.authors));
     item.appendChild(createResearchDesc(node.publication));
     return item;
 }
-function createResearchAuthors(date){
+function createResearchAuthors(node){
     let dateElem = document.createElement('h4');
-    item.appendChild(createResearchDate(node.date));
-    item.appendChild(createResearchDesc(node.description));
-    return item;
+    dateElem.innerText = node
+    return dateElem;
 }
 function createResearchDate(date){
     let dateElem = document.createElement('h3');
