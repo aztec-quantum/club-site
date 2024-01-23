@@ -11,6 +11,9 @@ body {
     color: white;
 }
 
+body > a {
+    text-decoration: none;
+}
 /* Styles for header and Nav Bar */
 .header-container {
     
@@ -21,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 
 .nav-container-logo {
@@ -104,7 +108,7 @@ body {
 .nav-selector > a {
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .nav-selector > a:hover{
@@ -117,9 +121,7 @@ body {
 }
 
 /* Styles for all pages */
-.main-container {
-    
-}
+
 .page {
     align-items: center;
     flex-direction: column;
@@ -141,7 +143,27 @@ body {
     display: none;
     min-height: 80vh;
 }
+.image-slide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none !important;
+}
+.image-node{
+    max-width: 45vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1%;
 
+}
+.image-node > img {
+    width: 100% !important;
+    height: auto;
+}
 .about-content {
     display: flex;
     flex-direction: column;
@@ -168,7 +190,7 @@ body {
 
 .about-carousel-slide {
     min-width: 100%;
-    min-height: 40vh;
+    min-height: 20vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -239,6 +261,9 @@ body {
     background-color: #2b2b2b;
     max-width: 50vw;
 }
+.research-subheader{
+    width: 70%;
+}
 
 
 
@@ -247,7 +272,7 @@ body {
 .roadmap-container {
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content: center;
     align-items: center;
     min-height: 70vh;
 }
@@ -255,19 +280,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1vh;
+    margin: 2%;
     padding: 2vh;
+    list-style-type: none;
 }
 .roadmap-node:hover {
     background-color: #3f3f3f;
 }
 .roadmap-node {
     padding: 2%;
+    list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: top;
     align-items: center;
-    margin: 1vh;
+    margin: 2%;
     background-color: #2b2b2b;
     max-width: 50vw;
 }
@@ -296,8 +323,8 @@ body {
 }
 
 .eboard-header {
-    padding: 30px;
-    text-align: left;
+    padding: 5%;
+    text-align: center;
 }
 
 .eboard-header > h1{
@@ -307,15 +334,18 @@ body {
 }
 
 .eboard-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .eboard-grid-item {
     padding: 20px;
     background-color: #2b2b2b;
     margin: 2%;
+    width: 25%;
 }
 .eboard-grid-item:hover {
     background-color: #3f3f3f;
@@ -356,9 +386,10 @@ body {
     width: 50%;
     margin: 1%;
 }
-.event:hover {
-    background-color: #3f3f3f;
+.event-loc:hover{
+    color: #5a99ff;
 }
+
 .event > a:active, a:visited, a:hover {
     color: inherit;
 }
@@ -500,6 +531,15 @@ span:nth-child(4){
     animation-duration: 3.5s;
 }
 
+.tags-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0%;
+}
 .tag {
     background: #000000;
     border-radius: 3px 0 0 3px;
@@ -545,4 +585,29 @@ span:nth-child(4){
 
 .tag:hover::after {
     border-left-color: rgb(6, 6, 6);
+}
+.resources-container {
+    list-style-type: none;
+    padding-inline-start: 0px !important;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    margin: none;
+    padding: none !important;
+}
+.resource-node {
+    text-decoration: none;
+    margin: 2%;
+}
+.resource-node > a{
+    color:#ffffff
+}
+.resource-node > a:hover{
+    color: #5a99ff;
+}
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }

@@ -12,16 +12,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
     <!--  -->
-    <title>San Diego State Quantum Computing</title>
+    <title>Quantum Computing Club at SDSU</title>
 </head>
 <body>
     <header class="header-container">
         <!-- Nav Bar -->
         <div class="nav-container">
-            <div class="nav-container-logo">
-                <img src="./assets/images/logo.png">
-            </div>
-            <nav class="nav-selector-container">
+            <nav class="nav-selector-container prevent-select">
+                <div class="nav-selector nav-container-logo prevent-select" onclick="switchPage('home')">
+                    <img src="./assets/images/logo.png" alt="Aztec Quantum">
+                </div>
                 <div class="nav-selector">
                     <a href="#" onclick="switchPage('home')">Home</a>
                 </div>
@@ -33,7 +33,21 @@
                 </div>
                 <div class="nav-selector">
                     <a href="#" onclick="switchPage('events')">Events</a>
+<<<<<<< HEAD
+=======
                 </div>
+                <div class="nav-selector">
+                    <a href="#" onclick="switchPage('eboard')">E-Board</a>
+                </div>
+                <div class="nav-selector">
+                    <a href="#" onclick="switchPage('research')">Research</a>
+>>>>>>> 5fde6ae (Added a research page with the format from roadmap)
+                </div>
+                <!--
+                <div class="nav-selector">
+                    <a href="#" onclick="switchPage('industry')">Industry</a>
+                </div>
+                -->
                 <div class="nav-selector">
                     <a href="#" onclick="switchPage('eboard')">E-Board</a>
                 </div>
@@ -46,7 +60,7 @@
                 </div>
                 -->
                 <div class="nav-selector">
-                    <a href="#" onclick="switchPage('join')">Join</a>
+                    <a href="#" onclick="switchPage('join')">Join Us</a>
                 </div>
             </nav>
             <button id="sidenav-open-btn" class="sidenav-open-btn" onclick="openSideNav()">
@@ -72,12 +86,15 @@
         </div>
         <div>
             <a class="sidenav-selector" href="#" onclick="switchPage('events')">Events</a>
+<<<<<<< HEAD
+=======
         </div>
         <div>
             <a class="sidenav-selector" href="#" onclick="switchPage('eboard')">E-Board</a>
         </div>
         <div>
             <a class="sidenav-selector" href="#" onclick="switchPage('research')">Research</a>
+>>>>>>> 5fde6ae (Added a research page with the format from roadmap)
         </div>
         <!--
                 <div>
@@ -85,7 +102,13 @@
         </div>
         -->
         <div>
-            <a class="sidenav-selector" href="#" onclick="switchPage('join')">Join</a>
+            <a class="sidenav-selector" href="#" onclick="switchPage('eboard')">E-Board</a>
+        </div>
+        <div>
+            <a class="sidenav-selector" href="#" onclick="switchPage('research')">Research</a>
+        </div>
+        <div>
+            <a class="sidenav-selector" href="#" onclick="switchPage('join')">Join Us</a>
         </div>
     </nav>
 
@@ -97,7 +120,11 @@
             <span></span>
             <span></span>
             <h1>Quantum Computing Club</h1>
-            <h2>at San Diego State University</h2>
+            <p>
+                <h2>at San Diego State University</h2>
+                <h4>Wednesdays in Student Success West 1500 7-9PM</h4>
+            </p>
+            
             <span></span>
         </div>
 
@@ -105,6 +132,13 @@
         <div id="about" class="page about-container">
             <h1 class="about-header">What We Do</h1>
             <p class="about-subheader">The purpose of this organization is to foster curiosity, promote learning, and facilitate collaboration in quantum computing. Our mission is to build a vibrant community that explores the potential of this cutting-edge technology while honing software engineering skills. Through workshops, projects, and research, we aim to empower diverse members with experience in both quantum computing and software engineering, inspiring a passion for continuous exploration and innovation within an inclusive and supportive environment.<br><br>The Quantum Computing Club at San Diego State University is a student-run organization, focused on creating a community of students interested in quantum computing and software engineering. Our club is dedicated to providing a welcoming environment for students to learn about quantum computing, software engineering, and other related topics. We host weekly meetings, events, and hackathons to help students learn and grow their skills. We also provide professional experience and expertise to help students prepare for their future careers. <br><br></p>
+            <ul class="image-slide">
+                <li class="image-node"><img src="assets/images/lab_photos/_MG_0620.jpg" ></li>
+                <li class="image-node"><img src="assets/images/lab_photos/_MG_0497.jpg" ></li>
+                <li class="image-node"><img src="assets/images/lab_photos/_MG_0634.jpg" ></li>
+                <li class="image-node"><img src="assets/images/lab_photos/_MG_0631.jpg" ></li>
+                <li class="image-node"><img src="assets/images/lab_photos/all-officers.jpg" ></li>
+            </ul>
             <div class="about-content">
                 <div class="about-carousel-container">
                     <div class="about-carousel">
@@ -139,15 +173,28 @@
 
         <!--  Member Roadmap Page -->
         <div id="roadmap" class="page roadmap-container">
-            
         </div>
 
 
       <!--  Research Page -->
       <div id="research" class="page research-container">
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <h1 class="research-header">Wirless and Quantum Communication Research Group at SDSU</h1>
+        <p class="research-subheader"> The WQCR Group focuses on Wireless and Quantum Communication Research. We work in small teams to apply quantum computing in areas such as telecommunications, UAV networks, satellite networks, and more! We have research positions available for both undergraduate and graduate students. To learn more contact the club president or faculty advisor.</p>
+      </div>
+=======
+        <!-- TODO: HAVING TROUBLE GETTING THE JSON NODES TO DISPLAY WITH THE STATIC TEXT!!!
+        <h1 class="research-header">Wirless and Quantum Communication Research Lab @ SDSU</h1>
+        <p class="research-subheader"> This page is dedicated to our new Quantum Research Lab at SDSU. The WQCR Lab focuses on exactly what you think it would from its title. Wireless and Quantum Communication Research.</p>
+        -->
+    </div>
+>>>>>>> 5fde6ae (Added a research page with the format from roadmap)
+=======
         <h1 class="research-header">Wirless and Quantum Communication Research Lab @ SDSU</h1>
         <p class="research-subheader"> This page is dedicated to our new Quantum Research Lab at SDSU. The WQCR Lab focuses on exactly what you think it would from its title. Wireless and Quantum Communication Research.</p>
       </div>
+>>>>>>> 037f8ae (fixed research text)
 
 
 
@@ -159,8 +206,6 @@
 
         <!-- E-Board Page -->
         <div id="eboard" class="page eboard-container">
-            <img class ="eboard-officer-pic" src="./assets/images/all-officers.jpg" 
-                alt="Picture of Officers">
             <div class="eboard-header">
                 <h1>Meet Our Officers</h1>
                 <br>
@@ -170,39 +215,48 @@
             </div>
             <div class="eboard-grid">
                 <div class="eboard-grid-item">
-                    <h4>President/Founder</h2>
-                    <img src="./assets/images/20230913_191113.JPG" alt="Tanner Kocher">
-                    <p>Tanner Kocher is a third year Computer Science major at SDSU. He is passionate about quantum computing and software engineering, often progressing his skillsets during his free-time. Tanner is currently working on research related to Quantum Computing.</p>
+                    <img src="./assets/images/headshots/_MG_1378.jpg" alt="Tanner Kocher">
+                    <h3>President/Founder</h3>
+                    <p>Tanner Kocher</p>
                 </div>
                 <div class="eboard-grid-item">
-                    <h4>Vice President/Founder</h4>
+                    <img src="./assets/images/headshots/_MG_1373.jpg" alt="">
+                    <h3>Vice President/Founder</h3>
+                    <p>Alejandro Pacheco</p>
+                </div>
+                <div class="eboard-grid-item">
+                    <img src="./assets/images/headshots/_MG_1374.jpg" alt="Tanner Kocher">
+                    <h3>Secretary/Founder</h3>
+                    <p>Andres Anderson</p>
+                </div>
+                <div class="eboard-grid-item">
+                    <img src="./assets/images/headshots/_MG_1376.jpg" alt="Tanner Kocher">
+                    <h3>Treasurer/Founder</h3>
+                    <p>Garen Vehouni</p>
+                </div>
+                <div class="eboard-grid-item">
+                    <img src="./assets/images/headshots/_MG_1379.jpg" alt="Tanner Kocher">
+                    <h3>Membership Officer/Founder</h3>
+                    <p>James Marsh</p>
+                </div>
+                <div class="eboard-grid-item">
+                    <img src="./assets/images/headshots/_MG_1375.jpg" alt="Tanner Kocher">
+                    <h3>Technical Officer/Founder</h3>
+                    <p>Enoch Chigbu</p>
+                </div>
+                <div class="eboard-grid-item">
+                    <img src="./assets/images/headshots/_MG_1380.jpg" alt="Tanner Kocher">
+                    <h3>Technical Officer/Founder</h3>
+                    <p>Raphaelle Baguio</p>
+                </div>
+                <div class="eboard-grid-item">
+                    <h3>Vice President of Marketing</h3>          
                     <img src="./assets/images/20230913_191113.JPG" alt="Tanner Kocher">
                 </div>
                 <div class="eboard-grid-item">
-                    <h4>Secretary/Founder</h4>
-                    <img src="./assets/images/20230913_191113.JPG" alt="Tanner Kocher">
-                    <p>Andres Anderson is an Electrical Engineering major with an interest in signal analysis. In his free-time he takes up the hobbie's of C.A.D. and surfing. He served in the Marine Corps from 2016-2020 as an infantryman.</p>
-                </div>
-                <div class="eboard-grid-item">
-                    <h4>Treasurer/Founder!</h4>
-                    <img src="./assets/images/20230913_191113.JPG" alt="Tanner Kocher">
-                </div>
-                <div class="eboard-grid-item">
-                    <h4>Membership Officer/Founder</h4>
-                    <img src="./assets/images/20230913_191113.JPG" alt="Tanner Kocher">
-                    <p>James Marsh is a third year Computer Science major at SDSU, minoring in mathematics. Aside from quantum computing, his interests include software engineering, photography, and live music.</p>
-                </div>
-                <div class="eboard-grid-item">
-                    <h4>Technical Officer/Founder</h4>
-                    <img src="./assets/images/20230913_191113.JPG" alt="Tanner Kocher">
-                </div>
-                <div class="eboard-grid-item">
-                    <h4>Technical Officer/Founder</h4>
-                    <img src="./assets/images/20230913_191113.JPG" alt="Tanner Kocher">
-                </div>
-                <div class="eboard-grid-item">
-                    <h4>Faculty Advisor/Founder</h4>          
-                    <img src="./assets/images/20230913_191113.JPG" alt="Tanner Kocher">
+                    <img src="./assets/images/headshots/_MG_1377.jpg" alt="Tanner Kocher">
+                    <h3>Faculty Advisor/Founder</h3>
+                    <p>Dr. Krishna Ramamoorthy</p>          
                 </div>
             </div>
         </div>
@@ -210,16 +264,6 @@
         <div id="events" class="page events-container">
             <div class="upcoming-events-container">
                 <h1>Upcoming Events</h1>
-                <div class="event">
-                    <h2>Qiskit Fall Fest</h2>
-                    <br>
-                    <p class="event-desc">
-                        The Qiskit Fall Fest is a collection of quantum computing events on college campuses around the world. Every Fall Fest event is organized and run by the students on each campus, with support from IBM Quantum. Student leaders work alongside IBM to design and plan their event, which are run in October and November. Each event is standalone - only made for the students on that particular campus.<br><br>The Qiskit Fall Fest at SDSU will platform guest speakers, and feature three interactive labs created by IBM Quantum. It is an opportunity to network, learn about quantum technology, information, and science. Members will also be able to earn a certificate issued by IBM Quantum.  
-                    </p>
-                    <br>
-                    <h3 class="event-date"> 7-9PM | October 24-26th, 2023</h3>
-                    <h3 class="event-loc">Location: <a href="https://map.concept3d.com/?id=801#!ct/68621,62917,40419,15205,68622,54894,71456,73914?m/523820?s/">Student Services West 1500</a></h3>
-                </div>
                 <div class="event">
                     <h2>Weekly Lab Meeting</h2>
                     <br>
@@ -231,8 +275,18 @@
                     <h3 class="event-loc">Location: <a href="https://map.concept3d.com/?id=801#!ct/68621,62917,40419,15205,68622,54894,71456,73914?m/523820?s/">Student Services West 1500</a></h3>
                 </div>
             </div>
-            <div class="past-events-container">
+            <div class="upcoming-events-container">
                 <h1>Past Events</h1>
+                <div class="event">
+                    <h2>Qiskit Fall Fest</h2>
+                    <br>
+                    <p class="event-desc">
+                        The Qiskit Fall Fest is a collection of quantum computing events on college campuses around the world. Every Fall Fest event is organized and run by the students on each campus, with support from IBM Quantum. Student leaders work alongside IBM to design and plan their event, which are run in October and November. Each event is standalone - only made for the students on that particular campus.<br><br>The Qiskit Fall Fest at SDSU will platform guest speakers, and feature three interactive labs created by IBM Quantum. It is an opportunity to network, learn about quantum technology, information, and science. Members will also be able to earn a certificate issued by IBM Quantum.  
+                    </p>
+                    <br>
+                    <h3 class="event-date"> 7-9PM | October 24-26th, 2023</h3>
+                    <h3 class="event-loc">Location: <a href="https://map.concept3d.com/?id=801#!ct/68621,62917,40419,15205,68622,54894,71456,73914?m/523820?s/">Student Services West 1500</a></h3>
+                </div>
             </div>
             <div class="weekly-events-container">
                 <p>Remember! Weekly Meetings at 7 PM! Location: <a href="https://map.concept3d.com/?id=801#!ct/68621,62917,40419,15205,68622,54894,71456,73914?m/523820?s/">Student Services West 1500</p><a></p>
@@ -244,7 +298,6 @@
             <p>If you are interested in joining the Quantum Computing Club at San Diego State,
                 join our Discord! Discord acts as our main communication platform, where we post events, learning materials, and announcements. All new members must complete the <a href="https://forms.gle/PBPxEdSf8eTbGFZb7">New Member Form</a>. Our labs are publically available on our <a href="https://github.com/aztec-quantum/FA23-labs">GitHub</a>. Our labs are currently completable to student members or experience quantum programmers. The member road map will allow for beginners to follow our progress and learn about quantum computing in a guided learning environment.<br><br>
             </p>    
-            <img src="./assets/images/all-officers.jpg" alt="">
             <h2> Coming Soon...</h2>
             <p>
                 The Quantum Computing Club at SDSU's member road map and member leaderboard publically available. 

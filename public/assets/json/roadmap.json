@@ -10,7 +10,19 @@
                     "tags": ["Quantum Information","Python"]
                 },
                 "resourcescontainer": {
-                    "resources": []
+                    "resources": ["https://qiskit.org/textbook/preface.html","https://www.youtube.com/embed/pQsdygaYcE4?si=JMQGiqlvfiCAjueg"]
+                }
+            },
+            {
+                "title": "Hello Quantum",
+                "description": "This lab will lay the foundation for using Qiskit and learning about the Gate Model in quantum computing. Participants will start with basic concepts in Quantum Information and Python programming.",
+                "date": "1/31",
+                "purpose": "Lay a foundation for using Qiskit and learning Gate Model of Quantum Computation",
+                "tagscontainer": {
+                    "tags": ["Quantum Information","Python"]
+                },
+                "resourcescontainer": {
+                    "resources": ["https://qiskit.org/textbook/preface.html","https://www.youtube.com/embed/pQsdygaYcE4?si=JMQGiqlvfiCAjueg"]
                 }
             },
             {

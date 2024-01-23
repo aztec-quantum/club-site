@@ -2,6 +2,32 @@
     "research": {
         "research-nodes": [
             {
+<<<<<<< HEAD
+                "title": "Wireless Network Relay Selection: Utilizing a Quantum Algorithm",
+                "publication": "In Progress",
+                "authors": "Tanner Kocher, Sam Braude, Dr. Krishna Ramamoorthy",
+                "description": "",
+                "links-container": {
+                    "links": []
+                }
+            },
+            {
+                "title": "",
+                "publication": "In Progress",
+                "authors": "Tanner Kocher",
+                "description": "",
+                "links-container": {
+                    "links": []
+                }
+            },
+            {
+                "title": "Wireless Network Relay Selection: Utilizing a Quantum Algorithm",
+                "publication": "In Progress",
+                "authors": "Sam Braude, Riley Thompson",
+                "description": "",
+                "links-container": {
+                    "links": []
+=======
                 "title": "Quantum Research Test",
                 "description": "This is an example",
                 "date": "1/20",
@@ -23,6 +49,7 @@
                 },
                 "resourcescontainer": {
                     "resources": []
+>>>>>>> 5fde6ae (Added a research page with the format from roadmap)
                 }
             }
         ]
