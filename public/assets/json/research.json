@@ -2,27 +2,30 @@
     "research": {
         "research-nodes": [
             {
-                "title": "Quantum Research Test",
-                "description": "This is an example",
-                "date": "1/20",
-                "purpose": "Quantum Research",
-                "tagscontainer": {
-                    "tags": ["Quantum","Python"]
-                },
-                "resourcescontainer": {
-                    "resources": []
+                "title": "Wireless Network Relay Selection: Utilizing a Quantum Algorithm",
+                "publication": "In Progress",
+                "authors": "Tanner Kocher, Sam Braude, Dr. Krishna Ramamoorthy",
+                "description": "",
+                "links-container": {
+                    "links": []
                 }
             },
             {
-                "title": "TEST TEST Quantum Application Development II",
-                "description": "Finalizes TEST TEST TEST the development of an Open Source Quantum Algorithm - Development Summary III.",
-                "date": "1/22",
-                "purpose": "Develop an Open Source Quantum TEST TEST Algorithm",
-                "tagscontainer": {
-                    "tags": ["TEST Quantum Software Engineering", "Software Engineering"]
-                },
-                "resourcescontainer": {
-                    "resources": []
+                "title": "",
+                "publication": "In Progress",
+                "authors": "Tanner Kocher",
+                "description": "",
+                "links-container": {
+                    "links": []
+                }
+            },
+            {
+                "title": "Wireless Network Relay Selection: Utilizing a Quantum Algorithm",
+                "publication": "In Progress",
+                "authors": "Sam Braude, Riley Thompson",
+                "description": "",
+                "links-container": {
+                    "links": []
                 }
             }
         ]

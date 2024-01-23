@@ -104,22 +104,23 @@ function createResearchItem(node){
     item.classList.add('research-node');
     item.onclick = function(){
         if(item.children.length == 3){
-            let tags = createTagContainer(node.tagscontainer['tags'])
-            item.appendChild(tags)
-            let purp = createResearchPurpose(node.purpose);
-            item.appendChild(purp);
+            //let desc = createResearchPurpose(node.description);
+            //item.appendChild(desc);
+            //let links = createLinksContainer(node.linkscontainer['links'])
+            //if(links.children.length > 0)item.appendChild(links); 
+            //Uncomment when research data is ready
         }
         else{
             while(item.children.length > 3){item.removeChild(item.lastChild);}
         }
     }
     item.appendChild(createResearchTitle(node.title));
-    item.appendChild(createResearchDate(node.date));
-    item.appendChild(createResearchDesc(node.description));
+    item.appendChild(createResearchAuthors(node.authors));
+    item.appendChild(createResearchDesc(node.publication));
     return item;
 }
-function createResearchDate(date){
-    let dateElem = document.createElement('h3');
+function createResearchAuthors(date){
+    let dateElem = document.createElement('h4');
     dateElem.classList.add('node-date');
     dateElem.innerText = date;
     return dateElem;
@@ -240,7 +241,9 @@ function createTagContainer(tags){
 function createResourcesContainer(resources){
     let resourcesContainer = document.createElement('ul');
     resourcesContainer.classList.add('resources-container');
-    resourcesContainer.innerText = 'Resources';
+    let resourcesHeader = document.createElement('h3');
+    resourcesHeader.innerText = 'Resources';
+    resourcesContainer.appendChild(resourcesHeader);
     for(const resource in resources){
         let resourceElem = document.createElement('li');
         resourceElem.classList.add('resource-node')

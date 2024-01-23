@@ -18,10 +18,10 @@
     <header class="header-container">
         <!-- Nav Bar -->
         <div class="nav-container">
-            <div onclick="switchPage('home')" class="nav-container-logo prevent-select">
-                <img src="./assets/images/logo.png" alt="Aztec Quantum">
-            </div>
             <nav class="nav-selector-container prevent-select">
+                <div class="nav-selector nav-container-logo prevent-select" onclick="switchPage('home')">
+                    <img src="./assets/images/logo.png" alt="Aztec Quantum">
+                </div>
                 <div class="nav-selector">
                     <a href="#" onclick="switchPage('home')">Home</a>
                 </div>
@@ -46,7 +46,7 @@
                 </div>
                 -->
                 <div class="nav-selector">
-                    <a href="#" onclick="switchPage('join')">Join</a>
+                    <a href="#" onclick="switchPage('join')">Join Us</a>
                 </div>
             </nav>
             <button id="sidenav-open-btn" class="sidenav-open-btn" onclick="openSideNav()">
@@ -79,13 +79,8 @@
         <div>
             <a class="sidenav-selector" href="#" onclick="switchPage('research')">Research</a>
         </div>
-        <!--
-                <div>
-            <a class="sidenav-selector" href="#" onclick="switchPage('industry')">Industry</a>
-        </div>
-        -->
         <div>
-            <a class="sidenav-selector" href="#" onclick="switchPage('join')">Join</a>
+            <a class="sidenav-selector" href="#" onclick="switchPage('join')">Join Us</a>
         </div>
     </nav>
 
@@ -97,7 +92,11 @@
             <span></span>
             <span></span>
             <h1>Quantum Computing Club</h1>
-            <h2>at San Diego State University</h2>
+            <p>
+                <h2>at San Diego State University</h2>
+                <h4>Wednesdays in Student Success West 1500 7-9PM</h4>
+            </p>
+            
             <span></span>
         </div>
 
@@ -146,14 +145,13 @@
 
         <!--  Member Roadmap Page -->
         <div id="roadmap" class="page roadmap-container">
-            
         </div>
 
 
       <!--  Research Page -->
       <div id="research" class="page research-container">
-        <h1 class="research-header">Wirless and Quantum Communication Research Lab @ SDSU</h1>
-        <p class="research-subheader"> This page is dedicated to our new Quantum Research Lab at SDSU. The WQCR Lab focuses on exactly what you think it would from its title. Wireless and Quantum Communication Research.</p>
+        <h1 class="research-header">Wirless and Quantum Communication Research Group at SDSU</h1>
+        <p class="research-subheader"> The WQCR Group focuses on Wireless and Quantum Communication Research. We work in small teams to apply quantum computing in areas such as telecommunications, UAV networks, satellite networks, and more! We have research positions available for both undergraduate and graduate students. To learn more contact the club president or faculty advisor.</p>
       </div>
 
 
@@ -166,8 +164,6 @@
 
         <!-- E-Board Page -->
         <div id="eboard" class="page eboard-container">
-            <img class ="eboard-officer-pic" src="./assets/images/all-officers.jpg" 
-                alt="Picture of Officers">
             <div class="eboard-header">
                 <h1>Meet Our Officers</h1>
                 <br>
@@ -227,16 +223,6 @@
             <div class="upcoming-events-container">
                 <h1>Upcoming Events</h1>
                 <div class="event">
-                    <h2>Qiskit Fall Fest</h2>
-                    <br>
-                    <p class="event-desc">
-                        The Qiskit Fall Fest is a collection of quantum computing events on college campuses around the world. Every Fall Fest event is organized and run by the students on each campus, with support from IBM Quantum. Student leaders work alongside IBM to design and plan their event, which are run in October and November. Each event is standalone - only made for the students on that particular campus.<br><br>The Qiskit Fall Fest at SDSU will platform guest speakers, and feature three interactive labs created by IBM Quantum. It is an opportunity to network, learn about quantum technology, information, and science. Members will also be able to earn a certificate issued by IBM Quantum.  
-                    </p>
-                    <br>
-                    <h3 class="event-date"> 7-9PM | October 24-26th, 2023</h3>
-                    <h3 class="event-loc">Location: <a href="https://map.concept3d.com/?id=801#!ct/68621,62917,40419,15205,68622,54894,71456,73914?m/523820?s/">Student Services West 1500</a></h3>
-                </div>
-                <div class="event">
                     <h2>Weekly Lab Meeting</h2>
                     <br>
                     <p class="event-desc">
@@ -247,8 +233,18 @@
                     <h3 class="event-loc">Location: <a href="https://map.concept3d.com/?id=801#!ct/68621,62917,40419,15205,68622,54894,71456,73914?m/523820?s/">Student Services West 1500</a></h3>
                 </div>
             </div>
-            <div class="past-events-container">
+            <div class="upcoming-events-container">
                 <h1>Past Events</h1>
+                <div class="event">
+                    <h2>Qiskit Fall Fest</h2>
+                    <br>
+                    <p class="event-desc">
+                        The Qiskit Fall Fest is a collection of quantum computing events on college campuses around the world. Every Fall Fest event is organized and run by the students on each campus, with support from IBM Quantum. Student leaders work alongside IBM to design and plan their event, which are run in October and November. Each event is standalone - only made for the students on that particular campus.<br><br>The Qiskit Fall Fest at SDSU will platform guest speakers, and feature three interactive labs created by IBM Quantum. It is an opportunity to network, learn about quantum technology, information, and science. Members will also be able to earn a certificate issued by IBM Quantum.  
+                    </p>
+                    <br>
+                    <h3 class="event-date"> 7-9PM | October 24-26th, 2023</h3>
+                    <h3 class="event-loc">Location: <a href="https://map.concept3d.com/?id=801#!ct/68621,62917,40419,15205,68622,54894,71456,73914?m/523820?s/">Student Services West 1500</a></h3>
+                </div>
             </div>
             <div class="weekly-events-container">
                 <p>Remember! Weekly Meetings at 7 PM! Location: <a href="https://map.concept3d.com/?id=801#!ct/68621,62917,40419,15205,68622,54894,71456,73914?m/523820?s/">Student Services West 1500</p><a></p>
@@ -260,7 +256,6 @@
             <p>If you are interested in joining the Quantum Computing Club at San Diego State,
                 join our Discord! Discord acts as our main communication platform, where we post events, learning materials, and announcements. All new members must complete the <a href="https://forms.gle/PBPxEdSf8eTbGFZb7">New Member Form</a>. Our labs are publically available on our <a href="https://github.com/aztec-quantum/FA23-labs">GitHub</a>. Our labs are currently completable to student members or experience quantum programmers. The member road map will allow for beginners to follow our progress and learn about quantum computing in a guided learning environment.<br><br>
             </p>    
-            <img src="./assets/images/all-officers.jpg" alt="">
             <h2> Coming Soon...</h2>
             <p>
                 The Quantum Computing Club at SDSU's member road map and member leaderboard publically available. 

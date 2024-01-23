@@ -11,6 +11,9 @@ body {
     color: white;
 }
 
+body > a {
+    text-decoration: none;
+}
 /* Styles for header and Nav Bar */
 .header-container {
     
@@ -21,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 
 .nav-container-logo {
@@ -104,7 +108,7 @@ body {
 .nav-selector > a {
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .nav-selector > a:hover{
@@ -257,6 +261,9 @@ body {
     background-color: #2b2b2b;
     max-width: 50vw;
 }
+.research-subheader{
+    width: 70%;
+}
 
 
 
@@ -265,7 +272,7 @@ body {
 .roadmap-container {
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content: center;
     align-items: center;
     min-height: 70vh;
 }
@@ -327,15 +334,18 @@ body {
 }
 
 .eboard-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .eboard-grid-item {
     padding: 20px;
     background-color: #2b2b2b;
     margin: 2%;
+    width: 25%;
 }
 .eboard-grid-item:hover {
     background-color: #3f3f3f;
@@ -376,9 +386,10 @@ body {
     width: 50%;
     margin: 1%;
 }
-.event:hover {
-    background-color: #3f3f3f;
+.event-loc:hover{
+    color: #5a99ff;
 }
+
 .event > a:active, a:visited, a:hover {
     color: inherit;
 }
@@ -599,4 +610,4 @@ span:nth-child(4){
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
-  }
+}
