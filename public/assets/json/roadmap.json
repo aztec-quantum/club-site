@@ -209,7 +209,7 @@
                 "title": "Quantum Algorithm for Resolving the Prisoner's Dilemma via Nash Equilibrium",
                 "publication": "In Progress",
                 "authors": "Tanner Kocher",
-                "description": "The research delves into the fascinating intersection of Quantum Computing and Game Theory. It proposes innovative strategies for resolving the inherent challenges presented by games, such as, the Prisoner's Dilemma. We explore how quantum strategies, enabled by the unique properties of qubits, offer novel perspectives on cooperation and competition. The Algorithm provides a dramatic decrease in the number of operations needed to find the Pure Strategy Nash Equilibrium. Results obtained from experiments utilizing a Quantum Computer demonstrate significant promise, establishing it as a compelling avenue for research into studying Quantum Game Theory",
+                "description": "The research delves into the fascinating intersection of Quantum Computing and Game Theory. It proposes innovative strategies for resolving the inherent challenges presented by games, such as, the Prisoner's Dilemma. We explore how quantum strategies, enabled by the unique properties of qubits, offer novel perspectives on cooperation and competition. The Algorithm provides a dramatic decrease in the number of operations needed to find the Pure Strategy Nash Equilibrium. Results obtained from experiments utilizing a Quantum Computer demonstrate significant promise, establishing it as a compelling avenue for research into studying Quantum Game Theory.",
                 "links-container": {
                     "links": []
                 }
@@ -218,7 +218,7 @@
                 "title": "Quantum Leap in Strategy: Reshaping Arms Races and Advertising with Quantum Game Theory",
                 "publication": "In Progress",
                 "authors": "Sam Braude, Riley Thompson",
-                "description": "test",
+                "description": "This research examines the intriguing conjunction of Quantum Game Theory with scenarios like the arms race and advertising games. It presents pioneering methods employing Quantum Computing to navigate intricate dilemmas in classical game theory settings. The study capitalizes on the singular attributes of qubits, providing new angles on strategic decision-making in contexts of both cooperation and rivalry. An innovative algorithm introduced in this research markedly streamlines the process to ascertain Pure Strategy Nash Equilibria. Empirical data gathered through Quantum Computer trials showcases remarkable potential, signifying a notable direction for future exploration in the domain of Quantum Game Theory.",
                 "links-container": {
                     "links": []
                 }
