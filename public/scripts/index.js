@@ -93,6 +93,7 @@ function fetchResearchJSON() {
 
 function renderResearch(researchData) {
     const research = document.createElement('ul');
+    research.classList.add('research');
     for (const node of researchData.roadmap['research-nodes']) {
         const resElem = createResearchItem(node)
         research.appendChild(resElem);
@@ -108,6 +109,7 @@ function createResearchItem(node){
     item.classList.add('research-node');
     item.appendChild(createResearchTitle(node.title));
     item.appendChild(createResearchAuthors(node.authors));
+    item.appendChild(createResearchDesc(node.description));
     item.appendChild(createResearchDesc(node.publication));
     return item;
 }
@@ -183,8 +185,11 @@ function createRoadmapItem(node){
             item.appendChild(tags)
             let purp = createRoadmapPurpose(node.purpose);
             item.appendChild(purp);
-            let resources = createResourcesContainer(node.resourcescontainer['resources']);
-            item.appendChild(resources);
+            if(node.resourcescontainer['resources'].length > 0){
+                let resources = createResourcesContainer(node.resourcescontainer['resources']);
+                item.appendChild(resources);
+            }
+            
         }
         else{
             while(item.children.length > 2){item.removeChild(item.lastChild);}

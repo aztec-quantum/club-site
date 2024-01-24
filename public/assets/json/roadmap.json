@@ -10,19 +10,7 @@
                     "tags": ["Quantum Information","Python"]
                 },
                 "resourcescontainer": {
-                    "resources": ["https://qiskit.org/textbook/preface.html","https://www.youtube.com/embed/pQsdygaYcE4?si=JMQGiqlvfiCAjueg"]
-                }
-            },
-            {
-                "title": "Hello Quantum",
-                "description": "This lab will lay the foundation for using Qiskit and learning about the Gate Model in quantum computing. Participants will start with basic concepts in Quantum Information and Python programming.",
-                "date": "1/31",
-                "purpose": "Lay a foundation for using Qiskit and learning Gate Model of Quantum Computation",
-                "tagscontainer": {
-                    "tags": ["Quantum Information","Python"]
-                },
-                "resourcescontainer": {
-                    "resources": ["https://qiskit.org/textbook/preface.html","https://www.youtube.com/embed/pQsdygaYcE4?si=JMQGiqlvfiCAjueg"]
+                    "resources": ["https://learning.quantum.ibm.com/","https://docs.quantum.ibm.com/start/hello-world","https://en.wikipedia.org/wiki/Quantum_computing","https://open.spotify.com/show/1QYDLAr0AkMGW3Vswtb9FD","https://www.youtube.com/embed/lOTw8d9tIvc?si=0wUiFgwKM6hDHcWq","https://www.youtube.com/embed/-UlxHPIEVqA?si=Hoy8KvAxuWWZdv0X","https://www.youtube.com/embed/zhQItO6_WoI?si=kXU1_dTpopt7Jvyg","https://www.youtube.com/embed/g_IaVepNDT4?si=SXppZYc38z-VbSSY"]
                 }
             },
             {
@@ -34,7 +22,7 @@
                     "tags": ["Python", "Quantum Information", "Quantum Circuits"]
                 },
                 "resourcescontainer": {
-                    "resources": []
+                    "resources": ["https://www.python.org/about/gettingstarted/","https://docs.quantum.ibm.com/build","https://www.youtube.com/embed/30U2DTfIrOU?si=91fv6SBjJ_2epJIL","https://www.youtube.com/embed/Jx7IuJMYtJM?si=6BeEW57CKF4RUh6u"]
                 }
             },
             {
@@ -46,7 +34,7 @@
                     "tags": ["Quantum Information", "Quantum Circuits", "Gate Model"]
                 },
                 "resourcescontainer": {
-                    "resources": []
+                    "resources": ["https://en.wikipedia.org/wiki/Quantum_information","https://www.primaryobjects.com/2021/09/15/the-ultimate-guide-to-a-quantum-computing-certification-with-qiskit/","https://www.youtube.com/embed/tBnWG_95F9c?si=31ajGHoc4uCa6KVS","https://www.youtube.com/embed/5z-Fesb7b40?si=DQEzg8O254mXnCoE"]
                 }
             },
             {
@@ -58,7 +46,7 @@
                     "tags": ["Gate Model", "Logic Gates", "Quantum Information"]
                 },
                 "resourcescontainer": {
-                    "resources": []
+                    "resources": ["https://en.wikipedia.org/wiki/Quantum_logic_gate","https://www.youtube.com/embed/ZBaXPY_0TNI?si=rDi7S1TaBcx2Exxf","https://www.youtube.com/embed/rD_fH7O-D5Y?si=IqS-jMoxKfehVwKK"]
                 }
             },
             {
@@ -70,7 +58,7 @@
                     "tags": ["Gate Model", "Logic Gates", "Boolean Expressions", "Quantum Information", "Dynamic Circuits"]
                 },
                 "resourcescontainer": {
-                    "resources": []
+                    "resources": ["https://qt.eu/quantum-principles/computing/gate-based-qc","https://en.wikipedia.org/wiki/Boolean_expression","https://sandbox.mc.edu/~bennet/cs110/boolalg/simple.html","https://www.youtube.com/embed/eFIk7wpU5vA?si=KD9-Zjv4361TTSU0","https://www.youtube.com/embed/QLMVfImNc0o?si=09mU3CuOJwFvrlO1"]
                 }
             },
             {
@@ -82,7 +70,7 @@
                     "tags": ["Gate Model", "Quantum Algorithms", "Bell’s States"]
                 },
                 "resourcescontainer": {
-                    "resources": []
+                    "resources": ["https://qiskit.org/ecosystem/algorithms/tutorials/index.html","https://research.ibm.com/blog/quantum-dynamic-circuits","https://www.youtube.com/embed/9OM0jSTeeBg?si=0NWQKZrN08N8FkzL"]
                 }
             },
             {
@@ -94,7 +82,7 @@
                     "tags": ["Quantum Teleportation", "Quantum Algorithms"]
                 },
                 "resourcescontainer": {
-                    "resources": []
+                    "resources": ["https://en.wikipedia.org/wiki/Quantum_teleportation","https://www.youtube.com/embed/RukK8ZzmBik?si=_ZvCn--xqnVlBQrO"]
                 }
             },
             {
@@ -107,7 +95,7 @@
                     "Shor’s Algorithm", "Grover’s Algorithm", "Quantum Algorithms"]
                 },
                 "resourcescontainer": {
-                    "resources": []
+                    "resources": ["https://en.wikipedia.org/wiki/Shor%27s_algorithm","https://en.wikipedia.org/wiki/Grover%27s_algorithm","https://www.youtube.com/embed/lvTqbM5Dq4Q?si=VNaAQys5InKnKRST","https://alice-bob.com/technology/","https://www.youtube.com/embed/hnpjC8WQVrQ?si=1cY3Nfy2mlJqXugs"]
                 }
             },
             {
@@ -119,7 +107,7 @@
                     "tags": ["Quantum Errors", "Error Correction Techniques", "Quantum Hardware"]
                 },
                 "resourcescontainer": {
-                    "resources": []
+                    "resources": ["https://research.ibm.com/topics/quantum-error-correction","https://www.hpcwire.com/off-the-wire/alice-bob-advance-quantum-computing-with-fewer-qubits-needed-for-error-correction/","https://www.youtube.com/embed/WJr7jqpjge0?si=AlMB5Nf0vRcQUrke"]
                 }
             },
             {
@@ -131,7 +119,7 @@
                     "tags": ["Quantum Errors", "Error Mitigation", "Error Correction", "Error Suppression", "Quantum Algorithms", "Quantum Hardware"]
                 },
                 "resourcescontainer": {
-                    "resources": []
+                    "resources": ["https://qiskit.org/textbook/ch-quantum-hardware/error-correction-repetition-code.html","https://research.ibm.com/blog/quantum-error-suppression-mitigation-correction","https://arxiv.org/abs/2210.00921","https://www.quera.com/blog-posts/quantum-error-suppression#:~:text=Quantum%20error%20suppression%20refers%20to,few%20of%20them%20as%20possible.","https://www.youtube.com/embed/w7GHPmfCzZs?si=LkxZD1IQl7uFWsJw","https://www.youtube.com/embed/icEKqUJf8l8?si=f-bcVvYpo1b2twvT"]
                 }
             },
             {
@@ -212,25 +200,25 @@
                 "title": "Wireless Network Relay Selection: Utilizing a Quantum Algorithm",
                 "publication": "In Progress",
                 "authors": "Tanner Kocher, Sam Braude, Dr. Krishna Ramamoorthy",
-                "description": "",
+                "description": "The research explores the application of Quantum Computing to the field of Wireless Networks. It proposes a novel Quantum Algorithm for Relay Selection in Wireless Networks. Consider a wireless communication network where multiple source-destination pairs need to communicate through a set of relay nodes. The goal is to select an optimal relay for each source-destination pair to maximize the overall network throughput, while considering individual users’ preferences. Experiments conducted using a Quantum Computer have shown substantial potential, marking it as an intriguing field of research for exploring Quantum Wireless Networks.",
                 "links-container": {
                     "links": []
                 }
             },
             {
-                "title": "",
+                "title": "Quantum Algorithm for Resolving the Prisoner's Dilemma via Nash Equilibrium",
                 "publication": "In Progress",
                 "authors": "Tanner Kocher",
-                "description": "",
+                "description": "The research delves into the fascinating intersection of Quantum Computing and Game Theory. It proposes innovative strategies for resolving the inherent challenges presented by games, such as, the Prisoner's Dilemma. We explore how quantum strategies, enabled by the unique properties of qubits, offer novel perspectives on cooperation and competition. The Algorithm provides a dramatic decrease in the number of operations needed to find the Pure Strategy Nash Equilibrium. Results obtained from experiments utilizing a Quantum Computer demonstrate significant promise, establishing it as a compelling avenue for research into studying Quantum Game Theory",
                 "links-container": {
                     "links": []
                 }
             },
             {
-                "title": "Wireless Network Relay Selection: Utilizing a Quantum Algorithm",
+                "title": "Quantum Leap in Strategy: Reshaping Arms Races and Advertising with Quantum Game Theory",
                 "publication": "In Progress",
                 "authors": "Sam Braude, Riley Thompson",
-                "description": "",
+                "description": "test",
                 "links-container": {
                     "links": []
                 }
