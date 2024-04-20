@@ -1,0 +1,228 @@
+{
+    "roadmap": {
+        "roadmap-nodes": [
+            {
+                "title": "Hello Quantum",
+                "description": "This lab will lay the foundation for using Qiskit and learning about the Gate Model in quantum computing. Participants will start with basic concepts in Quantum Information and Python programming.",
+                "date": "1/31",
+                "purpose": "Lay a foundation for using Qiskit and learning Gate Model of Quantum Computation",
+                "tagscontainer": {
+                    "tags": ["Quantum Information","Python"]
+                },
+                "resourcescontainer": {
+                    "resources": ["https://learning.quantum.ibm.com/","https://docs.quantum.ibm.com/start/hello-world","https://en.wikipedia.org/wiki/Quantum_computing","https://open.spotify.com/show/1QYDLAr0AkMGW3Vswtb9FD","https://www.youtube.com/embed/lOTw8d9tIvc?si=0wUiFgwKM6hDHcWq","https://www.youtube.com/embed/-UlxHPIEVqA?si=Hoy8KvAxuWWZdv0X","https://www.youtube.com/embed/zhQItO6_WoI?si=kXU1_dTpopt7Jvyg","https://www.youtube.com/embed/g_IaVepNDT4?si=SXppZYc38z-VbSSY"]
+                }
+            },
+            {
+                "title": "Intro to Circuits",
+                "description": "This lab will lay the foundation for using Qiskit and learning about the Gate Model in quantum computing. Participants will start with basic concepts in Quantum Information and Python programming.",
+                "date": "2/7",
+                "purpose": "Understand the basics of quantum information theory",
+                "tagscontainer": {
+                    "tags": ["Python", "Quantum Information", "Quantum Circuits"]
+                },
+                "resourcescontainer": {
+                    "resources": ["https://www.python.org/about/gettingstarted/","https://docs.quantum.ibm.com/build","https://www.youtube.com/embed/30U2DTfIrOU?si=91fv6SBjJ_2epJIL","https://www.youtube.com/embed/Jx7IuJMYtJM?si=6BeEW57CKF4RUh6u"]
+                }
+            },
+            {
+                "title": "A Deeper Look at Circuits",
+                "description": "The lab will delve deeper into Quantum Circuits and the Gate Model. It aims to build a solid foundation in Quantum Gate Model and the practical use of Quantum Circuits.",
+                "date": "2/14",
+                "purpose": "Build a foundation in Quantum Gate Model and Using Quantum Circuits",
+                "tagscontainer": {
+                    "tags": ["Quantum Information", "Quantum Circuits", "Gate Model"]
+                },
+                "resourcescontainer": {
+                    "resources": ["https://en.wikipedia.org/wiki/Quantum_information","https://www.primaryobjects.com/2021/09/15/the-ultimate-guide-to-a-quantum-computing-certification-with-qiskit/","https://www.youtube.com/embed/tBnWG_95F9c?si=31ajGHoc4uCa6KVS","https://www.youtube.com/embed/5z-Fesb7b40?si=DQEzg8O254mXnCoE"]
+                }
+            },
+            {
+                "title": "Intro to Gate Model",
+                "description": "This lab is about building Quantum Circuits using the Quantum Gate Model. It will cover the Gate Model, Logic Gates, and Quantum Information.",
+                "date": "2/21",
+                "purpose": "Building Quantum Circuits using the Quantum Gate Model",
+                "tagscontainer": {
+                    "tags": ["Gate Model", "Logic Gates", "Quantum Information"]
+                },
+                "resourcescontainer": {
+                    "resources": ["https://en.wikipedia.org/wiki/Quantum_logic_gate","https://www.youtube.com/embed/ZBaXPY_0TNI?si=rDi7S1TaBcx2Exxf","https://www.youtube.com/embed/rD_fH7O-D5Y?si=IqS-jMoxKfehVwKK"]
+                }
+            },
+            {
+                "title": "A Deeper Look at the Gate Model",
+                "description": "The focus here is to understand the gate model and its applications, including Logic Gates, Boolean Expressions, Quantum Information, and Dynamic Circuits.",
+                "date": "2/28",
+                "purpose": "Understand the gate model and it’s applications ",
+                "tagscontainer": {
+                    "tags": ["Gate Model", "Logic Gates", "Boolean Expressions", "Quantum Information", "Dynamic Circuits"]
+                },
+                "resourcescontainer": {
+                    "resources": ["https://qt.eu/quantum-principles/computing/gate-based-qc","https://en.wikipedia.org/wiki/Boolean_expression","https://sandbox.mc.edu/~bennet/cs110/boolalg/simple.html","https://www.youtube.com/embed/eFIk7wpU5vA?si=KD9-Zjv4361TTSU0","https://www.youtube.com/embed/QLMVfImNc0o?si=09mU3CuOJwFvrlO1"]
+                }
+            },
+            {
+                "title": "Beginning Quantum Algorithms",
+                "description": "This lab introduces entangled qubit pairs and lays a foundation for understanding quantum algorithms. It will cover the Gate Model, Quantum Algorithms, and Bell’s States.",
+                "date": "3/6",
+                "purpose": "Introduce entangled qubit pairs and how entanglement is used in quantum algorithms",
+                "tagscontainer": {
+                    "tags": ["Gate Model", "Quantum Algorithms", "Bell’s States"]
+                },
+                "resourcescontainer": {
+                    "resources": ["https://qiskit.org/ecosystem/algorithms/tutorials/index.html","https://research.ibm.com/blog/quantum-dynamic-circuits","https://www.youtube.com/embed/9OM0jSTeeBg?si=0NWQKZrN08N8FkzL"]
+                }
+            },
+            {
+                "title": "Quantum Algorithms and Use Cases",
+                "description": "This lab focuses on understanding how quantum teleportation is implemented and the algorithms it leverages.",
+                "date": "3/13",
+                "purpose": "Understand how quantum teleportation is implemented and the broader implications of the algorithm",
+                "tagscontainer": {
+                    "tags": ["Quantum Teleportation", "Quantum Algorithms"]
+                },
+                "resourcescontainer": {
+                    "resources": ["https://en.wikipedia.org/wiki/Quantum_teleportation","https://www.youtube.com/embed/RukK8ZzmBik?si=_ZvCn--xqnVlBQrO"]
+                }
+            },
+            {
+                "title": "Implementing Quantum Algorithms",
+                "description": "Introduces Dynamic Circuits and famous quantum algorithms like Shor’s and Grover’s Algorithms, along with their applications.",
+                "date": "3/20",
+                "purpose": "Introduce Dynamic Circuits, Introduce a Famous quantum algorithm and understand it’s applications",
+                "tagscontainer": {
+                    "tags": ["Dynamic Circuits", "Quantum Circuits", "Python",
+                    "Shor’s Algorithm", "Grover’s Algorithm", "Quantum Algorithms"]
+                },
+                "resourcescontainer": {
+                    "resources": ["https://en.wikipedia.org/wiki/Shor%27s_algorithm","https://en.wikipedia.org/wiki/Grover%27s_algorithm","https://www.youtube.com/embed/lvTqbM5Dq4Q?si=VNaAQys5InKnKRST","https://alice-bob.com/technology/","https://www.youtube.com/embed/hnpjC8WQVrQ?si=1cY3Nfy2mlJqXugs"]
+                }
+            },
+            {
+                "title": "Intro to Error Correction",
+                "description": "The lab introduces quantum errors and explores how they can be corrected in hardware and software.",
+                "date": "3/27",
+                "purpose": "Introduce Quantum Errors and explore ways to properly handle errors",
+                "tagscontainer": {
+                    "tags": ["Quantum Errors", "Error Correction Techniques", "Quantum Hardware"]
+                },
+                "resourcescontainer": {
+                    "resources": ["https://research.ibm.com/topics/quantum-error-correction","https://www.hpcwire.com/off-the-wire/alice-bob-advance-quantum-computing-with-fewer-qubits-needed-for-error-correction/","https://www.youtube.com/embed/WJr7jqpjge0?si=AlMB5Nf0vRcQUrke"]
+                }
+            },
+            {
+                "title": "Mitigation, Correction, and Suppression",
+                "description": "A deeper look into Quantum Errors, understanding the difference between error mitigation, error correction, and error suppression.",
+                "date": "4/3",
+                "purpose": "A deeper look into Quantum Errors. Understand the difference between error mitigation, error correction, and error suppression",
+                "tagscontainer": {
+                    "tags": ["Quantum Errors", "Error Mitigation", "Error Correction", "Error Suppression", "Quantum Algorithms", "Quantum Hardware"]
+                },
+                "resourcescontainer": {
+                    "resources": ["https://qiskit.org/textbook/ch-quantum-hardware/error-correction-repetition-code.html","https://research.ibm.com/blog/quantum-error-suppression-mitigation-correction","https://arxiv.org/abs/2210.00921","https://www.quera.com/blog-posts/quantum-error-suppression#:~:text=Quantum%20error%20suppression%20refers%20to,few%20of%20them%20as%20possible.","https://www.youtube.com/embed/w7GHPmfCzZs?si=LkxZD1IQl7uFWsJw","https://www.youtube.com/embed/icEKqUJf8l8?si=f-bcVvYpo1b2twvT"]
+                }
+            },
+            {
+                "title": "Designing Quantum Circuits",
+                "description": "Focuses on learning how to design and develop a quantum circuit.",
+                "date": "4/10",
+                "purpose": "Learn how to design and develop a quantum circuit",
+                "tagscontainer": {
+                    "tags": ["Quantum Circuits", "Quantum Information", "Python", "Quantum Utility", "Quantum Applications"]
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Algorithm Creation I",
+                "description": "Covers the basics of Quantum Algorithm Creation.",
+                "date": "4/17",
+                "purpose": "Learn the basics of Quantum Algorithm Creation",
+                "tagscontainer": {
+                    "tags": ["Quantum Algorithms", "Python", "Dynamic Circuits"]
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Algorithm Creation II",
+                "description": "Continues with Quantum Algorithm Design and Development.",
+                "date": "4/24",
+                "purpose": "Look into Quantum Algorithm Design and Development",
+                "tagscontainer": {
+                    "tags": ["Quantum Algorithms", "Python", "Dynamic Circuits"]
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Quantum Application Design",
+                "description": "Design an Open Source Quantum Algorithm - Development Summary I.",
+                "date": "5/1",
+                "purpose": "Develop an Open Source Quantum Algorithm",
+                "tagscontainer": {
+                    "tags": ["Quantum Software Engineering", "Software Engineering"]
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Quantum Application Development I",
+                "description": "Continues the development of an Open Source Quantum Algorithm - Development Summary II.",
+                "date": "5/8",
+                "purpose": "Develop an Open Source Quantum Algorithm",
+                "tagscontainer": {
+                    "tags": ["Quantum Software Engineering", "Software Engineering"]
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            },
+            {
+                "title": "Quantum Application Development II",
+                "description": "Finalizes the development of an Open Source Quantum Algorithm - Development Summary III.",
+                "date": "5/15",
+                "purpose": "Develop an Open Source Quantum Algorithm",
+                "tagscontainer": {
+                    "tags": ["Quantum Software Engineering", "Software Engineering"]
+                },
+                "resourcescontainer": {
+                    "resources": []
+                }
+            }
+        ],
+        "research-nodes": [
+            {
+                "title": "Wireless Network Relay Selection: Utilizing a Quantum Algorithm",
+                "publication": "In Progress",
+                "authors": "Tanner Kocher, Sam Braude, Dr. Krishna Ramamoorthy",
+                "description": "The research explores the application of Quantum Computing to the field of Wireless Networks. It proposes a novel Quantum Algorithm for Relay Selection in Wireless Networks. Consider a wireless communication network where multiple source-destination pairs need to communicate through a set of relay nodes. The goal is to select an optimal relay for each source-destination pair to maximize the overall network throughput, while considering individual users’ preferences. Experiments conducted using a Quantum Computer have shown substantial potential, marking it as an intriguing field of research for exploring Quantum Wireless Networks.",
+                "links-container": {
+                    "links": []
+                }
+            },
+            {
+                "title": "Quantum Algorithm for Resolving the Prisoner's Dilemma via Nash Equilibrium",
+                "publication": "In Progress",
+                "authors": "Tanner Kocher",
+                "description": "The research delves into the fascinating intersection of Quantum Computing and Game Theory. It proposes innovative strategies for resolving the inherent challenges presented by games, such as, the Prisoner's Dilemma. We explore how quantum strategies, enabled by the unique properties of qubits, offer novel perspectives on cooperation and competition. The Algorithm provides a dramatic decrease in the number of operations needed to find the Pure Strategy Nash Equilibrium. Results obtained from experiments utilizing a Quantum Computer demonstrate significant promise, establishing it as a compelling avenue for research into studying Quantum Game Theory.",
+                "links-container": {
+                    "links": []
+                }
+            },
+            {
+                "title": "Quantum Leap in Strategy: Reshaping Arms Races and Advertising with Quantum Game Theory",
+                "publication": "In Progress",
+                "authors": "Sam Braude, Riley Thompson",
+                "description": "In the world of decision-making, game theory helps us understand how people, teams, or groups make choices and work together or compete. In the realm of strategic dynamics, the Arms Race represents a compelling application of game theory, exploring the competitive escalation of military capabilities between entities. This concept delves into the intricate decision-making processes that drive nations to build up their arsenals in response to perceived threats, illuminating the complexities of global security dynamics. Shifting gears to the business landscape, game theory offers valuable insights into the strategic dance of Advertisement. Analyzing how companies strategically position and promote their products, this application sheds light on the competitive maneuvers within markets, showcasing the multifaceted interplay of pricing, branding, and consumer behavior in the realm of advertising strategies. In this research, we delve into obtaining the solution for both the games using a quantum approach. Our algorithm utilizes quantum entanglement and Pauli-Y gates to create a wave function that models each player’s unique strategies for decision making. Moreover, the incorporation of a Quantum Algorithm and Quantum Computing introduces innovative approaches in the application of Quantum game theory, leading to transformative strides in achieving Nash Equilibrium solutions, marking a revolutionary advance in strategic decision-making.",
+                "links-container": {
+                    "links": []
+                }
+            }
+        ]
+    }
+}

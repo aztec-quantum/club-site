@@ -1,0 +1,29 @@
+{
+  "name": "club-site",
+  "version": "1.0.0",
+  "description": "Server for Club Site",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js",
+    "build": "echo 'Nothing to build for a static site'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aztec-quantum/club-site.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/aztec-quantum/club-site/issues"
+  },
+  "homepage": "https://github.com/aztec-quantum/club-site#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
