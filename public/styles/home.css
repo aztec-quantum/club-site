@@ -425,6 +425,28 @@ body > a {
     }
 }
 
+.event-sponsors > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.classiq-logo {
+    width: 60%;
+    height: fit-content;
+}
+
+.dorahacks-logo {
+    width: 40%;
+}
+
+.register-button {
+    box-shadow: none;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+}
+
 .upcoming-events-container {
     flex: 1;
 }
